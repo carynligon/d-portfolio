@@ -1,69 +1,101 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        d-portfolio
+      <Nav />
+      <h1 class="title column">
+        I’m Derrick Ligon & I’m a product designer in Austin, TX currently
+        working at IBM. My background includes brand, visual design, user
+        experience, and design systems. Outside of solving user needs, my focus
+        is on being a better ally.
       </h1>
-      <h2 class="subtitle">
-        Derrick Ligon&#39;s Portfolio
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <div class="roles container">
+        <div class="current-role column">
+          <h3>Currently</h3>
+          <div class="role-content">
+            <p class="current-role-text">UX Designer @ IBM Security, since 2018</p>
+            <p>Twitter / LinkedIn / Dribbble / Medium</p>
+          </div>
+        </div>
+        <!-- <div class="spacer column"></div> -->
+        <div class="previous-roles column">
+          <h3>Previously</h3>
+          <ul class="role-content">
+            <li>
+              <p>Designer @ Phobio, 2017–2018</p>
+            </li>
+            <li>
+              <p>Visual/UX Designer @ IBM, 2015–2017</p>
+            </li>
+            <li>
+              <p>Designer @ Fracture, 2013–2015</p>
+            </li>
+          </ul>
+        </div>
       </div>
+      <ProjectMenu />
     </div>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
+import Nav from '~/components/Nav.vue'
+import ProjectMenu from '~/components/ProjectMenu.vue'
+import Footer from '~/components/Footer.vue'
 
 export default Vue.extend({
   components: {
-    Logo
+    Nav,
+    ProjectMenu,
+    Footer
   }
 })
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+body {
+  font-family: 'Graphik Web';
+  padding: 0 80px;
 }
-
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 52px;
+  margin: 5.625rem 0 3.0625rem 0;
+  --width: 10;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.roles p {
+  font-size: 20px;
 }
-
-.links {
-  padding-top: 15px;
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 1.125rem;
 }
+.spacer {
+  --width: 1;
+}
+.current-role,
+.previous-roles {
+  --width: 5;
+}
+.role-content {
+  display: flex;
+  height: 90px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.current-role-text {
+  margin-bottom: 2.25rem;
+}
+.previous-roles ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* .previous-roles li {
+  margin: 0.5rem 0;
+}
+.previous-roles li:first-of-type {
+  margin: 0;
+} */
 </style>
