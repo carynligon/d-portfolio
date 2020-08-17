@@ -13,3 +13,10 @@
   width: calc(var(--width) / var(--columns) * 100%);
   padding: 0 12px;
 }
+
+.container .column:first-child {
+	padding-left: 0;
+}
+.container .column:last-child {
+	padding-right: 0;
+}

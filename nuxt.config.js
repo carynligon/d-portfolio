@@ -15,6 +15,7 @@ export default {
       }
     ],
     link: [
+      { rel: 'stylesheet', href: '/colors.css' },
       { rel: 'stylesheet', href: '/font.css' },
       { rel: 'stylesheet', href: '/grid.css' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

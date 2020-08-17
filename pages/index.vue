@@ -13,7 +13,12 @@
           <h3>Currently</h3>
           <div class="role-content">
             <p class="current-role-text">UX Designer @ IBM Security, since 2018</p>
-            <p>Twitter / LinkedIn / Dribbble / Medium</p>
+            <div class="email">
+              <p>hello@derrickligon.com</p>
+              <div>
+                <img alt="click to copy email address" src="~/assets/svgs/copy.svg" />
+              </div>
+            </div>
           </div>
         </div>
         <!-- <div class="spacer column"></div> -->
@@ -91,6 +96,26 @@ h3 {
 .previous-roles ul {
   list-style-type: none;
   padding: 0;
+}
+.email {
+  align-items: center;
+  display: flex;
+}
+.email div {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.04);
+  display: flex;
+  height: 2.25rem;
+  justify-content: center;
+  margin-left: 6px;
+  width: 2.25rem;
+}
+.email img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.email div:hover {
+  cursor: pointer;
 }
 /* .previous-roles li {
   margin: 0.5rem 0;
