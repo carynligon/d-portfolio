@@ -1,3 +1,9 @@
 body {
   --black: #161616;
+  --links: #0336FF;
+}
+
+body a {
+  color: var(--links);
+  text-decoration: none;
 }

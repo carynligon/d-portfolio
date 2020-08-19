@@ -1,10 +1,20 @@
 <template>
   <div class="project-menu container">
-    <div class="feature-project column"></div>
-    <div class="project column"></div>
-    <div class="project column"></div>
-    <div class="project column"></div>
-    <div class="project column"></div>
+    <a class="feature-project column" href="/cloud-pak">
+      <div></div>
+    </a>
+    <a class="project column" href>
+      <div></div>
+    </a>
+    <a class="project column" href>
+      <div></div>
+    </a>
+    <a class="project column" href>
+      <div></div>
+    </a>
+    <a class="project column" href>
+      <div></div>
+    </a>
   </div>
 </template>
 <style>
