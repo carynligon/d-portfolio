@@ -70,10 +70,10 @@ body {
   --width: 10;
 }
 .roles p {
-  font-size: 20px;
+  font-size: var(--font-size-body-lg);
 }
 h3 {
-  font-size: 24px;
+  font-size: var(--font-size-h3);
   font-weight: normal;
   margin-bottom: 1.125rem;
 }
