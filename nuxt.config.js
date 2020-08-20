@@ -14,7 +14,12 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'stylesheet', href: '/colors.css' },
+      { rel: 'stylesheet', href: '/font.css' },
+      { rel: 'stylesheet', href: '/grid.css' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -39,10 +44,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt'
-  ],
+  modules: [],
   /*
    ** Build configuration
    */
@@ -50,6 +52,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 }
