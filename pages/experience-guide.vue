@@ -7,7 +7,7 @@
     <div class="project-feature-img column">FEATURE IMG HERE</div>
     <div class="content container">
       <div class="content-left column">
-        <QuoteSection v-bind:copy="copy.processQuote" />
+        <QuoteSection v-bind:copy="copy.systemsThinkingQuote" />
       </div>
       <div class="spacer column"></div>
       <div class="content-right column">
@@ -25,43 +25,33 @@
       <div class="content-left column" />
       <div class="spacer column" />
       <div class="content-right column">
-        <ContentSection v-bind:copy="copy.scalable" />
+        <ContentSection v-bind:copy="copy.buildingHome" />
       </div>
     </div>
     <div class="project-feature-img column">FEATURE VID HERE</div>
     <div class="content container">
       <div class="content-left column">
-        <ContentSection v-bind:copy="copy.planning" />
+        <ContentSection v-bind:copy="copy.newSkills" />
       </div>
     </div>
     <div class="project-feature-img column">FEATURE IMG HERE</div>
     <div class="content container">
       <div class="content-left column">
-        <QuoteSection v-bind:copy="copy.peterQuote" />
+        <QuoteSection v-bind:copy="copy.philQuote" />
       </div>
       <div class="spacer column"></div>
       <div class="content-right column">
-        <ContentSection v-bind:copy="copy.findings" />
+        <ContentSection v-bind:copy="copy.outcomes" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
-    <div class="img-container container column">
-      <div class="project-feature-img column">FEATURE IMG 1 HERE</div>
-      <div class="project-feature-img column">FEATURE IMG 2 HERE</div>
-    </div>
-    <div class="content container">
-      <div class="content-left column">
-        <ContentSection v-bind:copy="copy.next" />
-      </div>
-    </div>
-    <BottomNav active="cloudPak" />
+    <BottomNav active="experienceGuide" />
     <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import copy from '~/copy/cloud-pack';
+import copy from '~/copy/experience-guide';
 import Nav from '~/components/Nav.vue';
 import BottomNav from '~/components/BottomNav.vue';
 import ProjectIntro from '~/components/ProjectIntro.vue';
