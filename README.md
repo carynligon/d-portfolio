@@ -2,9 +2,15 @@
 
 > Derrick Ligon&#39;s Portfolio
 
+## Prereqs
+* Install [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
+
 ## Build Setup
 
 ```bash
+# Set Node version
+$ nvm use
+
 # install dependencies
 $ npm install
 
