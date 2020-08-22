@@ -1,35 +1,50 @@
 <template>
   <div class="project-menu container">
     <a class="feature-project" href="/cloud-pak">
-      <div><p>IBM Cloud Pak for Security</p></div>
+      <div>
+        <p>IBM Cloud Pak for Security</p>
+      </div>
       <img
         src="~/assets/imgs/index/cloud-pak-2x.png"
         alt="A user flow diagram for creating dashboards"
       />
+      <img
+        class="cloud-pak-sm"
+        src="~/assets/imgs/index/cloud-pak-sm-2x.png"
+        alt="A user flow diagram for creating dashboards"
+      />
     </a>
     <a class="project column" href>
-      <div><p>IBM Security Experience Guide</p></div>
+      <div>
+        <p>IBM Security Experience Guide</p>
+      </div>
       <img
         src="~/assets/imgs/index/experience-guide-2x.png"
         alt="Screenshot of the IBM Security Experience Guide"
       />
     </a>
     <a class="project column" href>
-      <div><p>IBM Accessibility Handbook</p></div>
+      <div>
+        <p>IBM Accessibility Handbook</p>
+      </div>
       <img
         src="~/assets/imgs/index/accessibility-2x.png"
         alt="Landing page for the Design section of the IBM Accessibility Handbook"
       />
     </a>
     <a class="project column" href>
-      <div><p>Other Work</p></div>
+      <div>
+        <p>Other Work</p>
+      </div>
       <img
         src="~/assets/imgs/index/other-2x.png"
         alt="iPad showing a a device trade-in experience for Sprint"
       />
     </a>
     <a class="project column" href>
-      <div><p>Illustration</p></div>
+      <div>
+        <p>Illustration</p>
+      </div>
       <img
         src="~/assets/imgs/index/illustration-2x.png"
         alt="Pink illustration of a free donut shop in a desert"
@@ -42,17 +57,20 @@
   margin-top: 6.25rem;
 }
 .feature-project {
-  height: 640px;
   --width: 12;
 }
 .feature-project img {
+  display: block;
   width: 100%;
 }
+.feature-project img.cloud-pak-sm {
+  display: none;
+}
 .project {
-  height: 480px;
   --width: 6;
 }
 .project img {
+  display: block;
   width: 100%;
 }
 .project-menu a {
@@ -87,5 +105,22 @@
 }
 .project-menu p {
   font-size: var(--font-size-body-lg);
+}
+@media (max-width: 768px) {
+  .project {
+    --width: 12;
+  }
+  .feature-project img {
+    display: none;
+  }
+  .feature-project img.cloud-pak-sm {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .project-menu {
+    margin-top: var(--spacer-3xl);
+  }
 }
 </style>

@@ -23,6 +23,11 @@ body {
   --spacer-md: 1.5rem;
   --spacer-sm: 1.125rem;
   --spacer-xs: 0.5rem;
+
+  --screen-sm: 576px;
+  --screen-md: 768px;
+  --screen-lg: 992px;
+  --screen-xl: 1200px;
 }
 
 *,
@@ -36,7 +41,7 @@ h1,
 .h1 {
   font-size: var(--font-size-h1);
   font-weight: 400;
-  line-height: 52px;
+  line-height: 3.25rem;
 }
 h2,
 .h2 {
@@ -61,5 +66,13 @@ a {
 }
 .title {
   padding-left: 0;
+}
+@media (max-width: 576px) {
+  h1,
+  .h1 {
+    font-size: var(--font-size-h2);
+    font-weight: 400;
+    line-height: var(--font-size-h1);
+  }
 }
 </style>
