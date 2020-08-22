@@ -12,9 +12,7 @@
         <div class="current-role column">
           <h3>Currently</h3>
           <div class="role-content">
-            <p class="current-role-text">
-              UX Designer @ IBM Security, since 2018
-            </p>
+            <p class="current-role-text">UX Designer @ IBM, since 2018</p>
             <div class="email">
               <p>hello@derrickligon.com</p>
               <div>
@@ -72,7 +70,7 @@ body {
   font-weight: normal;
   line-height: 3.625rem;
   margin: 5.625rem 0 3.0625rem 0;
-  --width: 10;
+  --width: 12;
 }
 .roles p {
   font-size: var(--font-size-body-lg);
@@ -87,11 +85,10 @@ h3 {
 }
 .current-role,
 .previous-roles {
-  --width: 5;
+  --width: 6;
 }
 .role-content {
   display: flex;
-  height: 90px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -121,5 +118,27 @@ h3 {
 .email div:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 992px) {
+  .current-role,
+  .previous-roles {
+    --width: 12;
+  }
+  .roles p {
+    margin-bottom: var(--spacer-xs);
+  }
+  .previous-roles {
+    margin-top: var(--spacer-lg);
+  }
+}
+@media (max-width: 576px) {
+  body {
+    padding: 0 var(--spacer-md);
+  }
+  .title {
+    line-height: var(--font-size-h1);
+    margin-top: var(--spacer-3xl);
+  }
 }
 </style>
