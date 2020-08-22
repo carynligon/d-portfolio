@@ -1,5 +1,5 @@
 <template>
-  <div slot="container">
+  <div>
     <div>
       <Nav />
       <ProjectIntro v-bind:copy="copy.intro" />
@@ -15,12 +15,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import copy from '~/copy/other';
-import Nav from '~/components/Nav.vue';
-import BottomNav from '~/components/BottomNav.vue';
-import ProjectIntro from '~/components/ProjectIntro.vue';
-import ProjectPreview from '~/components/ProjectPreview.vue';import Footer from '~/components/Footer.vue';
+import Vue from 'vue'
+import copy from '~/copy/other'
+import Nav from '~/components/Nav.vue'
+import BottomNav from '~/components/BottomNav.vue'
+import ProjectIntro from '~/components/ProjectIntro.vue'
+import ProjectPreview from '~/components/ProjectPreview.vue'
+import Footer from '~/components/Footer.vue'
 
 export default Vue.extend({
   components: {
@@ -28,7 +29,7 @@ export default Vue.extend({
     Nav,
     ProjectIntro,
     ProjectPreview,
-    Footer,
+    Footer
   },
   data() {
     return {
@@ -38,5 +39,4 @@ export default Vue.extend({
 })
 </script>
 
-<style>
-</style>
+<style></style>

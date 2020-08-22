@@ -1,24 +1,27 @@
 <template>
   <div>
     <div class="title container">
-      <h1>{{copy.title}}</h1>
+      <h1>{{ copy.title }}</h1>
     </div>
     <div class="project-info container">
       <div class="description column">
-        <h2>{{copy.subtitle}}</h2>
-        <p>{{copy.description}}</p>
+        <h2>{{ copy.subtitle }}</h2>
+        <p>{{ copy.description }}</p>
       </div>
       <div class="spacer column"></div>
       <div class="role-description column">
         <h3 v-if="copy.role">My role</h3>
-        <p v-if="copy.role">{{copy.role}}</p>
+        <p v-if="copy.role">{{ copy.role }}</p>
         <h3 v-if="copy.timeline">Timeline</h3>
-        <p v-if="copy.timeline">{{copy.timeline}}</p>
+        <p v-if="copy.timeline">{{ copy.timeline }}</p>
         <h3 v-if="copy.teammates" class="teammates-heading">My teammates</h3>
         <ul v-if="copy.teammates" class="teammates">
-          <li v-for="(teammate, index) in copy.teammates" :key="'teammate-' + index">
-            <a :href="teammate.link">{{teammate.name}},</a>
-            <span>{{teammate.role}}</span>
+          <li
+            v-for="(teammate, index) in copy.teammates"
+            :key="'teammate-' + index"
+          >
+            <a :href="teammate.link">{{ teammate.name }},</a>
+            <span>{{ teammate.role }}</span>
           </li>
         </ul>
       </div>
@@ -42,6 +45,9 @@ export default {
 </script>
 
 <style>
+.intro-container {
+  margin-bottom: var(--spacer-3xl);
+}
 .title {
   margin: 5.625rem auto 3.0625rem auto;
   padding-left: 0;
