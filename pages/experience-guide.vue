@@ -1,5 +1,5 @@
 <template>
-  <div slot="container">
+  <div>
     <div>
       <Nav />
       <ProjectIntro v-bind:copy="copy.intro" />
@@ -50,14 +50,14 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import copy from '~/copy/experience-guide';
-import Nav from '~/components/Nav.vue';
-import BottomNav from '~/components/BottomNav.vue';
-import ProjectIntro from '~/components/ProjectIntro.vue';
-import ContentSection from '~/components/ContentSection.vue';
-import QuoteSection from '~/components/QuoteSection.vue';
-import Footer from '~/components/Footer.vue';
+import Vue from 'vue'
+import copy from '~/copy/experience-guide'
+import Nav from '~/components/Nav.vue'
+import BottomNav from '~/components/BottomNav.vue'
+import ProjectIntro from '~/components/ProjectIntro.vue'
+import ContentSection from '~/components/ContentSection.vue'
+import QuoteSection from '~/components/QuoteSection.vue'
+import Footer from '~/components/Footer.vue'
 
 export default Vue.extend({
   components: {
