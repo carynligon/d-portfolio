@@ -32,7 +32,7 @@
         <span>/</span>
       </li>
       <li>
-        <a href="/other" v-bind:class="{active: active === 'otherWork'}">Other Work</a>
+        <a href="/other" v-bind:class="{active: active === 'other'}">Other Work</a>
       </li>
       <li>
         <span>/</span>

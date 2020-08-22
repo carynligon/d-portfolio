@@ -15,7 +15,7 @@
   </nav>
 </template>
 
-<style>
+<style scoped>
 .nav {
   --width: 12;
   align-items: center;

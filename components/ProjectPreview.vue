@@ -3,10 +3,10 @@
     <div class="content-left column">
       <p>{{copy.company}} | {{copy.date}}</p>
       <h2>{{copy.title}}</h2>
-      <div class="tag" v-for="(tag, index) in copy.tags" :key="index">
+      <div class="tag" v-for="(tag, index) in copy.tags" :key="'tag-' + index">
         <span>{{tag}}</span>
       </div>
-      <p v-for="(paragraph, index) in copy.paragraphs" :key="index">{{paragraphs}}</p>
+      <p v-for="(paragraph, index) in copy.paragraphs" :key="'project-p-' + index"</p>
       <a v-if="copy.link" :href="copy.link">Visit the site</a>
     </div>
     <div class="content-right column">
@@ -25,9 +25,13 @@ export default {
       title: { type: String },
       tags: { type: Array },
       paragraphs: { type: Array },
-      link: { type: string },
+      link: { type: String },
       images: { type: Array }
     }
   }
 }
 </script>
+
+<style scoped>
+
+</style>
