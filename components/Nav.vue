@@ -1,15 +1,12 @@
 <template>
   <nav class="nav column container">
-    <a href class="home-link column">👋 Derrick Ligon</a>
+    <a href class="home-link column"><span>👋</span>Derrick Ligon</a>
     <ul class="nav-links column">
       <li>
-        <a href>Work</a>
+        <a href="/">Work</a>
       </li>
       <li>
         <a href>Resume</a>
-      </li>
-      <li>
-        <a href>Contact</a>
       </li>
     </ul>
   </nav>
@@ -25,8 +22,12 @@
 .home-link {
   --width: 9;
   color: var(--black);
+  font-size: var(--font-size-body-lg);
   font-weight: 600;
   text-decoration: none;
+}
+.home-link span {
+  margin-right: 8px;
 }
 .nav-links {
   --width: 3;
@@ -34,13 +35,16 @@
   justify-content: flex-end;
 }
 .nav-links li {
-  margin: 0 1rem;
+  margin: 0 0 0 2rem;
 }
 .nav-links li:first-of-type {
   margin-left: 0;
 }
 .nav-links a {
-  color: var(--black);
+  color: #9e9e9e;
   text-decoration: none;
+}
+.nav-links a:hover {
+  color: var(--black);
 }
 </style>

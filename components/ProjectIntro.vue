@@ -1,6 +1,6 @@
 <template>
-  <div class="intro-container">
-    <div class="title column">
+  <div>
+    <div class="title container">
       <h1>{{ copy.title }}</h1>
     </div>
     <div class="project-info container">
@@ -49,7 +49,7 @@ export default {
   margin-bottom: var(--spacer-3xl);
 }
 .title {
-  margin: 5.625rem 0 3.0625rem 0;
+  margin: 5.625rem auto 3.0625rem auto;
   padding-left: 0;
   --width: 10;
 }
@@ -57,14 +57,16 @@ export default {
   margin-bottom: var(--spacer-md);
 }
 h3 {
-  margin-bottom: var(--spacer-sm);
+  margin-bottom: var(--spacer-xs);
 }
 .spacer {
   --width: 1;
 }
 .description,
+.content-left {
+  --width: 6;
+}
 .role-description,
-.content-left,
 .content-right {
   --width: 5;
 }
