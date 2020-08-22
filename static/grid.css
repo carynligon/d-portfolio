@@ -14,7 +14,7 @@ body {
 	--width: 0; /* Default width of the element */
 
   width: calc(var(--width) / var(--columns) * 100%);
-  padding: 0 12px;
+  padding: 0;
 }
 
 .container .column:first-child {

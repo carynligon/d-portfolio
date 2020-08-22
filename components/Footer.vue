@@ -33,7 +33,7 @@
 .footer-nav {
   --width: 12;
   align-items: center;
-  margin-top: 8.625rem;
+  margin-top: 7.5rem;
   margin-bottom: var(--spacer-xl);
   padding-left: 0;
 }

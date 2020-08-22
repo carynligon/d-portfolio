@@ -31,4 +31,12 @@
   height: 480px;
   --width: 6;
 }
+.project-menu a {
+  position: relative;
+}
+.project-menu a::before {
+  background-color: red;
+  content: '';
+  display: block;
+}
 </style>
