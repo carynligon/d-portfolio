@@ -182,17 +182,22 @@ svg:hover .icon-color {
     --width: 8;
   }
   .social-links {
-    margin-bottom: var(--spacer-sm);
     --width: 4;
   }
 }
 @media (max-width: 576px) {
+  .footer-nav {
+    margin-top: var(--spacer-3xl);
+  }
   .coolest-person-ever,
   .social-links {
     justify-content: center;
     margin: 0 auto;
     text-align: center;
     --width: 12;
+  }
+  .social-links {
+    margin-bottom: var(--spacer-sm);
   }
 }
 </style>
