@@ -56,7 +56,7 @@ export default {
 <style>
 .bottom-nav-links {
   display: flex;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   padding: 0;
 }
 .bottom-nav-links a {
