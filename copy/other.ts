@@ -42,7 +42,23 @@ export default {
         }
       ],
       link: 'test',
-      images: [{ src: '', altText: '' }]
+      images: [
+        {
+          src:
+            'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
+          altText: 'squirrel 1'
+        },
+        {
+          src:
+            'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
+          altText: 'squirrel 2'
+        },
+        {
+          src:
+            'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
+          altText: 'squirrel 3'
+        }
+      ]
     },
     {
       title: 'Scaling design across a small company.',
@@ -62,7 +78,23 @@ export default {
             'Phobio is a device trade-in and workforce communication company. As one of two designers at a young, small company I was responsible for projects across the company. This included delivering design assets for brand, marketing, and product, working with business leaders to craft the stories for pitches to companies like Apple and Samsung, leading research efforts around user trade-in behaviors, and designing the user experiences for trade-in partnernships with Sprint and Apple. My experience at Phobio pushed my craft and my design leadership. I’m also unable to share examples from some of the partner experiences.'
         }
       ],
-      images: [{ src: '', altText: '' }]
+      images: [
+        {
+          src:
+            'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
+          altText: 'squirrel 1'
+        },
+        {
+          src:
+            'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
+          altText: 'squirrel 2'
+        },
+        {
+          src:
+            'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
+          altText: 'squirrel 3'
+        }
+      ]
     },
     {
       title:
@@ -107,7 +139,23 @@ export default {
           }
         ]
       },
-      images: [{ src: '', altText: '' }]
+      images: [
+        {
+          src:
+            'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
+          altText: 'squirrel 1'
+        },
+        {
+          src:
+            'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
+          altText: 'squirrel 2'
+        },
+        {
+          src:
+            'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
+          altText: 'squirrel 3'
+        }
+      ]
     },
     {
       title: 'A place to learn and share your coffee experiences with others.',
@@ -123,17 +171,17 @@ export default {
         {
           src:
             'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
-          altText: 'squirrel-1'
+          altText: 'squirrel 1'
         },
         {
           src:
             'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
-          altText: 'squirrel-2'
+          altText: 'squirrel 2'
         },
         {
           src:
             'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
-          altText: 'squirrel-3'
+          altText: 'squirrel 3'
         }
       ]
     }

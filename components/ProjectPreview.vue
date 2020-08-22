@@ -6,9 +6,9 @@
       </p>
       <h2>{{ copy.title }}</h2>
       <div class="tags">
-        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">{{
-          tag
-        }}</span>
+        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">
+          {{ tag }}
+        </span>
       </div>
       <div
         v-for="(paragraph, index) in copy.paragraphs"
@@ -32,9 +32,10 @@
           v-for="(teammate, index) in copy.contact.teammates"
           :key="'teammate-' + index"
           :href="teammate.link"
-          >{{ teammate.name
-          }}{{ index !== copy.contact.teammates.length - 1 ? ', ' : '' }}</a
         >
+          {{ teammate.name
+          }}{{ index !== copy.contact.teammates.length - 1 ? ', ' : '' }}
+        </a>
       </div>
       <a class="visit-link" v-if="copy.link" :href="copy.link"
         >Visit the site</a
@@ -44,24 +45,28 @@
       <div v-if="copy.images.length === 1" class="preview-image">
         PREVIEW IMG
       </div>
-      <VueSlickCarousel v-if="copy.images.length > 1">
-        <div
+      <Carousel v-if="copy.images.length > 1" :perPage="1">
+        <Slide
+          class="carousel-slide"
           v-for="(image, index) in copy.images"
           :key="'project-image-' + index"
         >
           <img :src="image.src" :alt="image.altText" />
-        </div>
-      </VueSlickCarousel>
+        </Slide>
+      </Carousel>
     </div>
   </div>
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import { Carousel, Slide } from 'vue-carousel'
 
 export default {
   name: 'ProjectPreview',
+  components: {
+    Carousel,
+    Slide
+  },
   props: {
     copy: {
       company: { type: String },
@@ -131,5 +136,16 @@ ul {
 }
 li {
   font-size: var(--font-size-body-sm);
+}
+.carousel-slide {
+  max-height: 500px;
+  width: 100%;
+}
+.carousel-slide img {
+  height: 100%;
+  width: 100%;
+}
+.VueCarousel-pagination {
+  margin-top: calc(var(--spacer-md * -1));
 }
 </style>
