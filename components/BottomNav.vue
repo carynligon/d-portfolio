@@ -1,5 +1,5 @@
 <template>
-  <nav class="bottom-nav">
+  <nav class="bottom-nav container">
     <ul class="bottom-nav-links">
       <li>
         <a href="/">All</a>

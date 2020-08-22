@@ -55,6 +55,6 @@ ul {
 p,
 li {
   font-size: var(--font-size-body);
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 </style>
