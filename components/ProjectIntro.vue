@@ -10,10 +10,12 @@
       </div>
       <div class="spacer column"></div>
       <div class="role-description column">
-        <h3>My role</h3>
-        <p>{{copy.role}}</p>
-        <h3 class="teammates-heading">My teammates</h3>
-        <ul class="teammates">
+        <h3 v-if="copy.role">My role</h3>
+        <p v-if="copy.role">{{copy.role}}</p>
+        <h3 v-if="copy.timeline">Timeline</h3>
+        <p v-if="copy.timeline">{{copy.timeline}}</p>
+        <h3 v-if="copy.teammates" class="teammates-heading">My teammates</h3>
+        <ul v-if="copy.teammates" class="teammates">
           <li v-for="(teammate, index) in copy.teammates" v-bind:key="index">
             <a :href="teammate.link">{{teammate.name}},</a>
             <span>{{teammate.role}}</span>
