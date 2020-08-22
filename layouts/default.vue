@@ -13,6 +13,7 @@ body {
   --font-size-h3: 1.5rem;
   --font-size-body: 1.125rem;
   --font-size-body-lg: 1.25rem;
+  --font-size-body-sm: 1rem;
 
   /* Spacing */
   --spacer-3xl: 3.5rem;
@@ -53,8 +54,12 @@ ul {
   list-style-type: none;
 }
 p,
-li {
+li,
+a {
   font-size: var(--font-size-body);
   line-height: 2rem;
+}
+.title {
+  padding-left: 0;
 }
 </style>

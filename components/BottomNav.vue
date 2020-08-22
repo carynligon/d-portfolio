@@ -8,7 +8,9 @@
         <span>/</span>
       </li>
       <li>
-        <a href="/cloud-pak" v-bind:class="{active: active === 'cloudPak'}">Cloud Pak for Security</a>
+        <a href="/cloud-pak" v-bind:class="{ active: active === 'cloudPak' }"
+          >Cloud Pak for Security</a
+        >
       </li>
       <li>
         <span>/</span>
@@ -16,8 +18,9 @@
       <li>
         <a
           href="/experience-guide"
-          v-bind:class="{active: active === 'experienceGuide'}"
-        >Experience Guide</a>
+          v-bind:class="{ active: active === 'experienceGuide' }"
+          >Experience Guide</a
+        >
       </li>
       <li>
         <span>/</span>
@@ -25,20 +28,27 @@
       <li>
         <a
           href="/accessibility"
-          v-bind:class="{active: active === 'accessibility'}"
-        >IBM Accessibility Handbook</a>
+          v-bind:class="{ active: active === 'accessibility' }"
+          >IBM Accessibility Handbook</a
+        >
       </li>
       <li>
         <span>/</span>
       </li>
       <li>
-        <a href="/other" v-bind:class="{active: active === 'other'}">Other Work</a>
+        <a href="/other" v-bind:class="{ active: active === 'other' }"
+          >Other Work</a
+        >
       </li>
       <li>
         <span>/</span>
       </li>
       <li>
-        <a href="/illustration" v-bind:class="{active: active === 'illustration'}">Illustration</a>
+        <a
+          href="/illustration"
+          v-bind:class="{ active: active === 'illustration' }"
+          >Illustration</a
+        >
       </li>
     </ul>
   </nav>
@@ -56,7 +66,7 @@ export default {
 <style>
 .bottom-nav-links {
   display: flex;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   padding: 0;
 }
 .bottom-nav-links a {
