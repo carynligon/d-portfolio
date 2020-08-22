@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav column container">
+  <nav class="footer-nav column container">
     <div class="coolest-person-ever column">
       👩‍💻 Website built by
       <a href="https://carynligon.com" target="_blank">Caryn Ligon</a>
@@ -30,10 +30,10 @@
 </template>
 
 <style>
-.nav {
+.footer-nav {
   --width: 12;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 8.625rem;
   margin-bottom: 2.25rem;
   padding-left: 0;
 }

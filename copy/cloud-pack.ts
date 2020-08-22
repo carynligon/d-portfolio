@@ -1,4 +1,32 @@
 export default {
+  intro: {
+    title: 'IBM Cloud Pak for Security',
+    subtitle: 'Designing a common platform to solve security workers’ problems.',
+    description: 'On Cloud Pak for Security, I designed experiences for our security platform. This included working with our many product teams to develop common patterns and workflows that were shared across teams. It also included working to understand the needs of security workers so that we could deliver experiences that didn’t just align the designs for our different tools or applications, but that solved our users’ problems and allowed them to detect, investigate, and respond to threats without having to jump between disconnected tools and workflows.',
+    role: 'Product Designer, 2020–Present',
+    teammates: [
+      {
+        name: 'Katie Orenstein',
+        link: '',
+        role: 'Design Lead'
+      },
+      {
+        name: 'Peter Vachon',
+        link: '',
+        role: 'Design Lead'
+      },
+      {
+        name: 'Terra Banal',
+        link: '',
+        role: 'Visual Designer'
+      },
+      {
+        name: 'Michelle Chen',
+        link: '',
+        role: 'Design Researcher'
+      },
+    ]
+  },
   problem: {
     title: 'The problem',
     subtitle: 'With a growing amount of tools & data spread across large companies, how do they secure their organizations?',
@@ -6,6 +34,10 @@ export default {
       'For businesses today, their security data is spread across different tools and data sources. In most cases, those tools and data sources are all separate and are not connected or integrated. Cloud Pak for Security was created to help solve that problem: connecting your tools and data sources on an open platform to help you uncover threats, gain insights, and respond to threats in a unified experience.',
       'For our platform design team, the problem was also a design system problem. IBM Security has a large portfolio of applications that were built by different teams. They often don’t use the same components or patterns. We weren’t only designing new patterns or solving user problems, we were aligning existing products and understanding the pain points of the designers across IBM Security.'
     ]
+  },
+  processQuote: {
+    quote: '“Optimization for our processes and an understanding of areas where we can improve would be huge for us.”',
+    author: 'Security Analyst during a dashboard user testing session'
   },
   process: {
     title: 'Our process',
@@ -31,11 +63,21 @@ export default {
       'Outside of validating some of our design decisions, key findings from these sessions included a need to clearly convey the relationship between a widget and the data it’s conveying, the need to visualize the same data query in multiple ways, and the users tendency to quickly duplicate and edit existing dashboards and widgets.'
     ]
   },
+  peterQuote: {
+    quote: '“Derrick’s ability to explore, leverage existing patterns, and include delightful moments within designs while understanding the entire user flow results in thoughtful experiences.”',
+    author: 'Peter Vachon, Design Principal and Cloud Pak for Security Design Lead'
+  },
   findings: {
     subtitle: 'User research gave us a solution that not only scaled but solved real user needs',
     paragraphs: [
       'With the findings from these sessions, I continued to refine the designs for the MVP version of our dashboarding experience. One of our big challenges was that given our timeline and the limitations we faced, we had to plan for just that: an MVP version. Keeping this in mind, I prototyped interactions beyond the scope of our work in order to see how well what we would be delivering would scale and to help us plan how to continue improving the experience. This included using Flinto, an animated prototyping tool, to explore future interactions like searching within the widget library, card layouts to address the findings mentioned before, and more advanced ways to customize their dashboards.',
       'From here, I worked with our visual designer, Terra, to deliver high fidelity redlines to our development team. With this work, we not only updated the existing designs to be consistent with our current design language, but our users, both security users and application teams, now have a way to create, configure, and customize dashboards and their widgets within Cloud Pak for Security.'
+    ]
+  },
+  next: {
+    title: 'What’s next',
+    paragraphs: [
+      'Our team is currently working on a variety of projects including account creations, multi-account management, and empowering developers to build applications, add-ons, or integrations on our platform. This work is ongoing and I can’t currently publish any examples but please reach out for additional work samples.'
     ]
   }
 }
