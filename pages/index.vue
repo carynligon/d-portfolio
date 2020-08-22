@@ -3,20 +3,25 @@
     <div>
       <Nav />
       <h1 class="title column">
-        I’m Derrick Ligon, a product designer in Austin, TX currently
-        working at IBM. My background includes brand, visual design, user
-        experience design, and design systems. Outside of solving user needs, my focus
-        is on working to be a better ally.
+        I’m Derrick Ligon, a product designer in Austin, TX currently working at
+        IBM. My background includes brand, visual design, user experience
+        design, and design systems. Outside of solving user needs, my focus is
+        on working to be a better ally.
       </h1>
       <div class="roles container">
         <div class="current-role column">
           <h3>Currently</h3>
           <div class="role-content">
-            <p class="current-role-text">UX Designer @ IBM Security, since 2018</p>
+            <p class="current-role-text">
+              UX Designer @ IBM Security, since 2018
+            </p>
             <div class="email">
               <p>hello@derrickligon.com</p>
               <div>
-                <img alt="click to copy email address" src="~/assets/svgs/copy.svg" />
+                <img
+                  alt="click to copy email address"
+                  src="~/assets/svgs/copy.svg"
+                />
               </div>
             </div>
           </div>
@@ -91,7 +96,7 @@ h3 {
   justify-content: space-between;
 }
 .current-role-text {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacer-lg);
 }
 .previous-roles ul {
   padding: 0;
@@ -116,6 +121,5 @@ h3 {
 .email div:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.04);
-
 }
 </style>
