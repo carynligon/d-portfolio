@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4 v-if="copy.title">{{copy.title}}</h4>
-    <p class="subtitle" v-if="copy.subtitle">{{copy.subtitle}}</p>
+    <p class="subtitle h2" v-if="copy.subtitle">{{copy.subtitle}}</p>
     <p
       class="paragraph"
       v-for="(paragraph, index) in paragraphs"
@@ -35,11 +35,9 @@ h4 {
   margin-bottom: 1.25rem;
 }
 .subtitle {
-  font-size: var(--font-size-h2);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacer-md);
 }
 .paragraph {
-  font-size: var(--font-size-body);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacer-md);
 }
 </style>

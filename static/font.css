@@ -26,12 +26,3 @@
   font-style: normal;
 }
 
-body {
-    font-family: 'Graphik Web';
-  --font-size-h1: 2.625rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.5rem;
-  --font-size-body: 1.125rem;
-  --font-size-body-lg: 1.25rem;
-}
-

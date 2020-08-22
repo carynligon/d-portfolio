@@ -75,7 +75,7 @@ body {
 h3 {
   font-size: var(--font-size-h3);
   font-weight: normal;
-  margin-bottom: 1.125rem;
+  margin-bottom: var(--spacer-sm);
 }
 .spacer {
   --width: 1;
@@ -91,10 +91,9 @@ h3 {
   justify-content: space-between;
 }
 .current-role-text {
-  margin-bottom: 2.25rem;
+  margin-bottom: var(--spacer-xl);
 }
 .previous-roles ul {
-  list-style-type: none;
   padding: 0;
 }
 .email {
@@ -117,10 +116,4 @@ h3 {
 .email div:hover {
   cursor: pointer;
 }
-/* .previous-roles li {
-  margin: 0.5rem 0;
-}
-.previous-roles li:first-of-type {
-  margin: 0;
-} */
 </style>

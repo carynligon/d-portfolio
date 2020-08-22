@@ -33,5 +33,8 @@ export default {
 </script>
 
 <style scoped>
-
+/* h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 400;
+} */
 </style>

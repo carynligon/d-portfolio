@@ -5,16 +5,23 @@
 </template>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+body {
+  /* Fonts */
+  font-family: 'Graphik Web';
+  --font-size-h1: 2.625rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1.125rem;
+  --font-size-body-lg: 1.25rem;
+
+  /* Spacing */
+  --spacer-3xl: 3.5rem;
+  --spacer-2xl: 3rem;
+  --spacer-xl: 2.25rem;
+  --spacer-lg: 2rem;
+  --spacer-md: 1.5rem;
+  --spacer-sm: 1.125rem;
+  --spacer-xs: 0.5rem;
 }
 
 *,
@@ -24,32 +31,30 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+h1,
+.h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 400;
+  line-height: 52px;
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+h2,
+.h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 400;
+  line-height: var(--font-size-h1);
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+h3,
+.h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 400;
+  line-height: var(--font-size-h2);
 }
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+ul {
+  list-style-type: none;
+}
+p,
+li {
+  font-size: var(--font-size-body);
+  line-height: 1.75rem;
 }
 </style>
