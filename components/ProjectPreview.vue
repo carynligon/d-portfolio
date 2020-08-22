@@ -1,34 +1,65 @@
 <template>
   <div class="container">
     <div class="content left column">
-      <p class="date">{{copy.company ? `${copy.company} | ` : ''}}{{copy.date}}</p>
-      <h2>{{copy.title}}</h2>
+      <p class="date">
+        {{ copy.company ? `${copy.company} | ` : '' }}{{ copy.date }}
+      </p>
+      <h2>{{ copy.title }}</h2>
       <div class="tags">
-        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">{{tag}}</span>
+        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">{{
+          tag
+        }}</span>
       </div>
-      <div v-for="(paragraph, index) in copy.paragraphs" :key="'project-p-' + index">
-        <p v-bind:class="{quote: paragraph.withQuote}" v-if="paragraph.text">{{paragraph.text}}</p>
+      <div
+        v-for="(paragraph, index) in copy.paragraphs"
+        :key="'project-p-' + index"
+      >
+        <p v-bind:class="{ quote: paragraph.withQuote }" v-if="paragraph.text">
+          {{ paragraph.text }}
+        </p>
         <ul v-if="paragraph.list">
-          <li v-for="(item, index) in paragraph.list" :key="'list-item-' + index">{{item}}</li>
+          <li
+            v-for="(item, index) in paragraph.list"
+            :key="'list-item-' + index"
+          >
+            {{ item }}
+          </li>
         </ul>
       </div>
       <div v-if="copy.contact">
-        <p>{{copy.contact.text}}</p>
+        <p>{{ copy.contact.text }}</p>
         <a
           v-for="(teammate, index) in copy.contact.teammates"
           :key="'teammate-' + index"
           :href="teammate.link"
-        >{{teammate.name}}{{index !== copy.contact.teammates.length - 1 ? ', ' : ''}}</a>
+          >{{ teammate.name
+          }}{{ index !== copy.contact.teammates.length - 1 ? ', ' : '' }}</a
+        >
       </div>
-      <a class="visit-link" v-if="copy.link" :href="copy.link">Visit the site</a>
+      <a class="visit-link" v-if="copy.link" :href="copy.link"
+        >Visit the site</a
+      >
     </div>
     <div class="content column">
-      <div class="preview-image">PREVIEW IMG</div>
+      <div v-if="copy.images.length === 1" class="preview-image">
+        PREVIEW IMG
+      </div>
+      <VueSlickCarousel v-if="copy.images.length > 1">
+        <div
+          v-for="(image, index) in copy.images"
+          :key="'project-image-' + index"
+        >
+          <img :src="image.src" :alt="image.altText" />
+        </div>
+      </VueSlickCarousel>
     </div>
   </div>
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
 export default {
   name: 'ProjectPreview',
   props: {
