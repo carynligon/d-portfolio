@@ -29,7 +29,7 @@
   </nav>
 </template>
 
-<style>
+<style scoped>
 .footer-nav {
   --width: 12;
   align-items: center;

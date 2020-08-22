@@ -16,7 +16,7 @@
         <p v-if="copy.timeline">{{copy.timeline}}</p>
         <h3 v-if="copy.teammates" class="teammates-heading">My teammates</h3>
         <ul v-if="copy.teammates" class="teammates">
-          <li v-for="(teammate, index) in copy.teammates" v-bind:key="index">
+          <li v-for="(teammate, index) in copy.teammates" :key="'teammate-' + index">
             <a :href="teammate.link">{{teammate.name}},</a>
             <span>{{teammate.role}}</span>
           </li>

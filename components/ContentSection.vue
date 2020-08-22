@@ -2,7 +2,11 @@
   <div>
     <h4 v-if="copy.title">{{copy.title}}</h4>
     <p class="subtitle" v-if="copy.subtitle">{{copy.subtitle}}</p>
-    <p class="paragraph" v-for="(paragraph, index) in paragraphs" :key="index">{{paragraph}}</p>
+    <p
+      class="paragraph"
+      v-for="(paragraph, index) in paragraphs"
+      :key="'content-p-' + index"
+    >{{paragraph}}</p>
   </div>
 </template>
 
