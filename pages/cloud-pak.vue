@@ -90,7 +90,7 @@ export default Vue.extend({
 .project-feature-img {
   border: 1px solid red;
   height: 500px;
-  margin-top: 3.5rem;
+  margin-top: var(--spacer-3xl);
   --width: 12;
 }
 .img-container {
@@ -104,6 +104,6 @@ export default Vue.extend({
   --width: 6;
 }
 .content {
-  margin-top: 3rem;
+  margin-top: var(--spacer-2xl);
 }
 </style>

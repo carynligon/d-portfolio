@@ -43,29 +43,15 @@ export default {
 
 <style>
 .title {
-  font-weight: normal;
   margin: 5.625rem 0 3.0625rem 0;
   padding-left: 0;
   --width: 10;
 }
-.title h1 {
-  font-size: var(--font-size-h1);
-  font-weight: normal;
-  line-height: 52px;
-}
 .description h2 {
-  font-size: var(--font-size-h2);
-  font-weight: normal;
-  line-height: 32px;
-  margin-bottom: 1.5rem;
-}
-.project-info p {
-  font-size: var(--font-size-body);
+  margin-bottom: var(--spacer-md);
 }
 h3 {
-  font-size: var(--font-size-h3);
-  font-weight: normal;
-  margin-bottom: 1.125rem;
+  margin-bottom: var(--spacer-sm);
 }
 .spacer {
   --width: 1;
@@ -77,19 +63,17 @@ h3 {
   --width: 5;
 }
 .teammates-heading {
-  margin-top: 2rem;
+  margin-top: var(--spacer-lg);
 }
 .teammates {
   display: flex;
-  height: 90px;
   flex-direction: column;
   justify-content: space-between;
 }
 .current-role-text {
-  margin-bottom: 2.25rem;
+  margin-bottom: var(--spacer-xl);
 }
 .role-description ul {
-  list-style-type: none;
   padding: 0;
 }
 </style>

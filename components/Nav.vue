@@ -20,7 +20,7 @@
   --width: 12;
   align-items: center;
   display: flex;
-  margin-top: 2.25rem;
+  margin-top: var(--spacer-xl);
 }
 .home-link {
   --width: 9;
@@ -32,7 +32,6 @@
   --width: 3;
   display: flex;
   justify-content: flex-end;
-  list-style-type: none;
 }
 .nav-links li {
   margin: 0 1rem;

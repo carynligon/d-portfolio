@@ -34,7 +34,7 @@
   --width: 12;
   align-items: center;
   margin-top: 8.625rem;
-  margin-bottom: 2.25rem;
+  margin-bottom: var(--spacer-xl);
   padding-left: 0;
 }
 .coolest-person-ever {
@@ -46,10 +46,9 @@
 .social-links {
   --width: 2;
   display: flex;
-  list-style-type: none;
 }
 .social-links li {
-  margin: 0 0.5rem;
+  margin: 0 var(--spacer-xs);
 }
 .social-links li:first-of-type {
   margin-left: 0;

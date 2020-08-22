@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p class="quote">{{copy.quote}}</p>
-    <p class="author">{{copy.author}}</p>
+    <p class="quote h1">{{copy.quote}}</p>
+    <p class="author h3">{{copy.author}}</p>
   </div>
 </template>
 
@@ -18,15 +18,11 @@ export default {
 </script>
 
 <style>
-.quote {
-  font-size: var(--font-size-h1);
-}
 .quote:first-letter,
 .quote::first-letter {
   margin-left: calc(var(--font-size-body) * -1);
 }
 .author {
   color: var(--gray);
-  font-size: var(--font-size-h3);
 }
 </style>
