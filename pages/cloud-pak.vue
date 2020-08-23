@@ -55,7 +55,7 @@
       </div>
     </div>
     <div class="content container">
-      <div class="content-main column" />
+      <div class="content-sub column" />
       <div class="spacer column" />
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.scalable" />
@@ -78,7 +78,7 @@
       </div>
     </div>
     <div class="content container">
-      <div class="content-sub-no-title column">
+      <div class="content-sub no-title column">
         <QuoteSection v-bind:copy="copy.peterQuote" />
       </div>
       <div class="spacer column"></div>
@@ -168,5 +168,8 @@ export default Vue.extend({
 }
 .content {
   margin-top: var(--spacer-2xl);
+}
+.content-sub.no-title {
+  margin-top: 0;
 }
 </style>

@@ -17,7 +17,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+div {
+  --width: 5;
+}
 .quote:first-letter,
 .quote::first-letter {
   margin-left: -0.825rem;

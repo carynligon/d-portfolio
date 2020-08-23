@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .intro-container {
   margin-bottom: var(--spacer-3xl);
 }
