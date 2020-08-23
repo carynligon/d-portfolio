@@ -9,6 +9,10 @@
         src="~/assets/imgs/accessibility/accessibility-1-2x.png"
         alt="Cloud Pak for Security homepage with application links and dashboard"
       />
+      <div class="caption">
+        Design portion of the handbook. Gives designers tips and resources to
+        use throughout their design process.
+      </div>
     </div>
     <div class="content container">
       <div class="content-sub column">
@@ -24,6 +28,10 @@
         src="~/assets/imgs/accessibility/accessibility-2-2x.png"
         alt="alt text here"
       />
+      <div class="caption">
+        Thomas J. Watson’s “good design is good business” is a popular mantra
+        around IBM, but for us good design is inclusive design.
+      </div>
     </div>
     <div class="content container">
       <div class="content-main column">
@@ -35,6 +43,10 @@
         src="~/assets/imgs/accessibility/accessibility-3-2x.png"
         alt="alt text here"
       />
+      <div class="caption">
+        The online version allowed us to include the same tips but link to more
+        tools, plugins, and resources.
+      </div>
     </div>
     <div class="content container">
       <div class="content-sub placeholder column" />
@@ -61,6 +73,10 @@
           src="~/assets/imgs/accessibility/accessibility-6-2x.png"
           alt="alt text here"
         />
+      </div>
+      <div class="caption">
+        The layouts and content for the physical copy of the handbook translated
+        easily to the online version.
       </div>
     </div>
     <div class="content container">

@@ -72,10 +72,15 @@
         playsinline
         disableRemotePlayback
         currentTime="0"
+        alt="Animated prototype of the scroll interaction for a dashboard widget library"
       >
         <source src="~/assets/videos/cloud-pak-4.webm" type="video/webm" />
         <source src="~/assets/videos/cloud-pak-4.mp4" type="video/mp4" />
       </video>
+      <div class="caption">
+        Animated prototypes in Flinto helped to quickly explore
+        microinteractions like scrolling show here.
+      </div>
     </div>
     <div class="content container">
       <div class="content-main column">
