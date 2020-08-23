@@ -67,6 +67,15 @@ a {
 .title {
   padding-left: 0;
 }
+.content-main {
+  --width: 6;
+}
+.content-sub {
+  --width: 5;
+}
+.spacer {
+  --width: 1;
+}
 @media (max-width: 576px) {
   h1,
   .h1 {

@@ -11,11 +11,11 @@
       />
     </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-sub column">
         <QuoteSection v-bind:copy="copy.processQuote" />
       </div>
       <div class="spacer column"></div>
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.problem" />
       </div>
     </div>
@@ -26,7 +26,7 @@
       />
     </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.process" />
       </div>
     </div>
@@ -37,15 +37,15 @@
       />
     </div>
     <div class="content container">
-      <div class="content-left column" />
+      <div class="content-sub column" />
       <div class="spacer column" />
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.scalable" />
       </div>
     </div>
     <div class="project-feature-img column">FEATURE VID HERE</div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.planning" />
       </div>
     </div>
@@ -56,11 +56,11 @@
       />
     </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-sub column">
         <QuoteSection v-bind:copy="copy.peterQuote" />
       </div>
       <div class="spacer column"></div>
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.findings" />
       </div>
     </div>
@@ -88,7 +88,7 @@
       </div>
     </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.next" />
       </div>
     </div>
