@@ -66,7 +66,6 @@ export default {
 <style>
 .bottom-nav-links {
   display: flex;
-  font-weight: 400;
   margin-top: 5rem;
   padding: 0;
   transition: 150ms color cubic-bezier(0.4, 0, 0.2, 1);
