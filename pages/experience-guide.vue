@@ -14,7 +14,12 @@
         <ContentSection v-bind:copy="copy.problem" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img container">
+      <img
+        src="~/assets/imgs/experience-guide/experience-guide-2-2x.png"
+        alt="Image showing site mape and screenshot of Github repo"
+      />
+    </div>
     <div class="content container">
       <div class="content-left column">
         <ContentSection v-bind:copy="copy.process" />
@@ -78,10 +83,12 @@ export default Vue.extend({
 
 <style>
 .project-feature-img {
-  border: 1px solid red;
-  height: 500px;
   margin-top: var(--spacer-3xl);
   --width: 12;
+}
+.project-feature-img img {
+  display: block;
+  width: 100%;
 }
 .img-container {
   padding: 0;

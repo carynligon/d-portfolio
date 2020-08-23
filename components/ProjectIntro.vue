@@ -6,7 +6,7 @@
     <div class="project-info container">
       <div class="description column">
         <h2>{{ copy.subtitle }}</h2>
-        <p>{{ copy.description }}</p>
+        <p v-html="copy.description" />
       </div>
       <div class="spacer column"></div>
       <div class="role-description column">
@@ -49,29 +49,32 @@ export default {
   margin-bottom: var(--spacer-3xl);
 }
 .title {
-  margin: 5.625rem auto 3.0625rem auto;
+  margin: 5.625rem auto 1.75rem auto;
   padding-left: 0;
   --width: 10;
 }
+.title h1 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+}
 .description h2 {
-  margin-bottom: var(--spacer-md);
+  margin-bottom: var(--spacer-sm);
 }
 h3 {
-  margin-bottom: var(--spacer-xs);
+  margin-bottom: var(--spacer-2xs);
+  margin-top: var(--spacer-xs);
 }
 .spacer {
   --width: 1;
 }
-.description,
-.content-left {
+.description {
   --width: 6;
 }
-.role-description,
-.content-right {
+.role-description {
   --width: 5;
 }
 .teammates-heading {
-  margin-top: var(--spacer-lg);
+  margin-top: 1.825rem;
 }
 .teammates {
   display: flex;

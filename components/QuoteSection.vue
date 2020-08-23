@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p class="quote h1">{{copy.quote}}</p>
-    <p class="author h3">{{copy.author}}</p>
+    <p class="quote h2">{{ copy.quote }}</p>
+    <p class="author h3">{{ copy.author }}</p>
   </div>
 </template>
 
@@ -20,9 +20,10 @@ export default {
 <style>
 .quote:first-letter,
 .quote::first-letter {
-  margin-left: calc(var(--font-size-body) * -1);
+  margin-left: -0.825rem;
 }
 .author {
-  color: var(--gray);
+  color: var(--dark-gray);
+  margin-top: var(--spacer-xs);
 }
 </style>

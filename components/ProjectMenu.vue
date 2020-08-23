@@ -14,7 +14,7 @@
         alt="A user flow diagram for creating dashboards"
       />
     </a>
-    <a class="project column" href>
+    <a class="project column" href="/experience-guide">
       <div>
         <p>IBM Security Experience Guide</p>
       </div>
