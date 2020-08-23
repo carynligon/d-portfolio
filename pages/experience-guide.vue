@@ -27,7 +27,7 @@
     </div>
     <div class="project-feature-img column">FEATURE VIDEO HERE</div>
     <div class="content container">
-      <div class="content-sub column" />
+      <div class="content-sub placeholder column" />
       <div class="spacer column" />
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.buildingHome" />
@@ -123,5 +123,10 @@ export default Vue.extend({
 }
 .content {
   margin-top: var(--spacer-2xl);
+}
+@media (max-width: 576px) {
+  .project-feature-img {
+    margin-top: var(--spacer-md);
+  }
 }
 </style>

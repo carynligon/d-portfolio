@@ -21,12 +21,14 @@
       <div class="spacer column"></div>
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.problem" />
-        <a
-          href="https://www.ibm.com/products/cloud-pak-for-security"
-          target="_blank"
-          class="button"
-          >Visit Cloud Pak Site</a
-        >
+        <div class="button-container">
+          <a
+            href="https://www.ibm.com/products/cloud-pak-for-security"
+            target="_blank"
+            class="button"
+            >Visit Cloud Pak Site</a
+          >
+        </div>
       </div>
     </div>
     <div class="project-feature-img container">
@@ -55,7 +57,7 @@
       </div>
     </div>
     <div class="content container">
-      <div class="content-sub column" />
+      <div class="content-sub placeholder column" />
       <div class="spacer column" />
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.scalable" />
@@ -171,5 +173,10 @@ export default Vue.extend({
 }
 .content-sub.no-title {
   margin-top: 0;
+}
+@media (max-width: 576px) {
+  .project-feature-img {
+    margin-top: var(--spacer-md);
+  }
 }
 </style>

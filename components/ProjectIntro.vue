@@ -4,7 +4,7 @@
       <h1>{{ copy.title }}</h1>
     </div>
     <div class="project-info container">
-      <div class="description column">
+      <div v-bind:class="{ wider: wider, description: true, column: true }">
         <h2>{{ copy.subtitle }}</h2>
         <p v-html="copy.description" />
       </div>
@@ -39,17 +39,21 @@ export default {
       description: { type: String },
       role: { type: String },
       teammates: { type: Array, default: [] }
-    }
+    },
+    wider: { type: Boolean }
   }
 }
 </script>
 
 <style scoped>
+.project-info {
+  margin: 0;
+}
 .intro-container {
   margin-bottom: var(--spacer-3xl);
 }
 .title {
-  margin: 5.625rem auto 1.75rem auto;
+  margin: 5.625rem auto 1.75rem 0;
   padding-left: 0;
   --width: 10;
 }
@@ -70,6 +74,9 @@ h3 {
 .description {
   --width: 6;
 }
+.description.wider {
+  --width: 8;
+}
 .role-description {
   --width: 5;
 }
@@ -86,5 +93,30 @@ h3 {
 }
 .role-description ul {
   padding: 0;
+}
+@media (max-width: 576px) {
+  .title {
+    margin-top: var(--spacer-3xl);
+  }
+  .title h1 {
+    font-size: var(--font-size-h2);
+    line-height: var(--font-size-h1);
+  }
+  .role-description {
+    margin-bottom: var(--spacer-sm);
+  }
+}
+@media (max-width: 768px) {
+  .spacer {
+    display: none;
+  }
+  .description,
+  .description.wider,
+  .role-description {
+    --width: 12;
+  }
+  .role-description {
+    margin-top: 1.825rem;
+  }
 }
 </style>

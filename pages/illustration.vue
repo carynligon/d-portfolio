@@ -2,7 +2,7 @@
   <div>
     <div>
       <Nav />
-      <ProjectIntro v-bind:copy="copy.intro" />
+      <ProjectIntro v-bind:wider="true" v-bind:copy="copy.intro" />
     </div>
     <div class="illustration-grid">
       <img
@@ -58,6 +58,9 @@ img {
   width: 100%;
 }
 @media (min-width: 768px) {
+  .illustration-grid {
+    justify-content: flex-start;
+  }
   img {
     height: auto;
     width: 50%;

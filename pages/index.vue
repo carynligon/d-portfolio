@@ -64,7 +64,6 @@ export default Vue.extend({
 <style>
 body {
   font-family: 'Graphik Web';
-  padding: 0 80px;
 }
 .title {
   font-weight: normal;
@@ -102,6 +101,9 @@ h3 {
   align-items: center;
   display: flex;
 }
+.roles .email p {
+  margin: 0;
+}
 .email div {
   align-items: center;
   border-radius: 4px;
@@ -112,8 +114,8 @@ h3 {
   width: 2.25rem;
 }
 .email img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 .email div:hover {
   cursor: pointer;
@@ -133,9 +135,6 @@ h3 {
   }
 }
 @media (max-width: 576px) {
-  body {
-    padding: 0 var(--spacer-md);
-  }
   .title {
     line-height: var(--font-size-h1);
     margin-top: var(--spacer-3xl);

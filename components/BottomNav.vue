@@ -66,6 +66,7 @@ export default {
 <style>
 .bottom-nav-links {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 5rem;
   padding: 0;
   transition: 150ms color cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,5 +84,10 @@ export default {
 .bottom-nav-links span {
   color: var(--dark-gray);
   margin: 0 1rem;
+}
+@media (max-width: 576px) {
+  .bottom-nav-links {
+    justify-content: center;
+  }
 }
 </style>
