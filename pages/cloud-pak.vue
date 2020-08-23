@@ -63,7 +63,16 @@
         <ContentSection v-bind:copy="copy.scalable" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE VID HERE</div>
+    <div class="project-feature-img container">
+      <img
+        src=""
+        alt="Animated prototype of the scroll interaction for a dashboard widget library"
+      />
+      <div class="caption">
+        Animated prototypes in Flinto helped to quickly explore
+        microinteractions like scrolling show here.
+      </div>
+    </div>
     <div class="content container">
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.planning" />

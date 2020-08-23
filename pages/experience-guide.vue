@@ -4,7 +4,14 @@
       <Nav />
       <ProjectIntro v-bind:copy="copy.intro" />
     </div>
-    <div class="project-feature-img column">FEATURE VIDEO HERE</div>
+    <div class="project-feature-img column">
+      FEATURE VIDEO HERE
+      <img />
+      <div class="caption">
+        Our Experience Guide brought together design teams and resources across
+        brand, product, research, and strategy.
+      </div>
+    </div>
     <div class="content container">
       <div class="content-sub column">
         <QuoteSection v-bind:copy="copy.systemsThinkingQuote" />
@@ -19,13 +26,24 @@
         src="~/assets/imgs/experience-guide/experience-guide-2-2x.png"
         alt="Image showing site mape and screenshot of Github repo"
       />
+      <div class="caption">
+        Working up front on site maps and collaborating in Github helped keep me
+        and Randy aligned as a team and with leadership.
+      </div>
     </div>
     <div class="content container">
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.process" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE VIDEO HERE</div>
+    <div class="project-feature-img column">
+      FEATURE VIDEO HERE
+      <img />
+      <div class="caption">
+        I used animated prototypes to quickly iterate and fine-tune
+        microinteractions like scroll behavior, hover states, or breadcrumbs.
+      </div>
+    </div>
     <div class="content container">
       <div class="content-sub placeholder column" />
       <div class="spacer column" />
@@ -36,8 +54,13 @@
     <div class="project-feature-img column">
       <img
         src="~/assets/imgs/experience-guide/experience-guide-4-2x.png"
-        alt="alt text here"
+        alt="Screenshot of photography resources within the marketing assets page of our experience guide."
       />
+      <div class="caption">
+        As the site and list of involved teams have grown, the Marketing assets
+        page remains the most popular page, giving designers a single place to
+        find the most up to date guidelines and assets.
+      </div>
     </div>
     <div class="content container">
       <div class="content-main column">
@@ -49,14 +72,19 @@
       <div class="project-feature-img half column">
         <img
           src="~/assets/imgs/experience-guide/experience-guide-6-2x.png"
-          alt="alt text here"
+          alt="Screenshot of the research section of the experience guide homepage"
         />
       </div>
       <div class="project-feature-img half column">
         <img
           src="~/assets/imgs/experience-guide/experience-guide-7-2x.png"
-          alt="alt text here"
+          alt="Image showing the mobile view of a research catalog."
         />
+      </div>
+      <div class="caption">
+        Adding a catalog of research findings was an key part of our work. We
+        considered how the research would be consumed to allow designers to
+        utilize the research throughout their design process.
       </div>
     </div>
     <div class="content container">

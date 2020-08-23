@@ -2,7 +2,7 @@ export default {
   intro: {
     title: 'IBM Cloud Pak for Security',
     subtitle:
-      'Designing a common platform to solve security workers’ problems.',
+      'Designing a common platform to solve security workers’ pain points.',
     description:
       'On Cloud Pak for Security, I designed experiences for our security platform. This included working with our many product teams to develop common patterns and workflows that were shared across teams. It also included working to understand the needs of security workers so that we could deliver experiences that didn’t just align the designs for our different tools or applications, but that solved our users’ problems and allowed them to detect, investigate, and respond to threats without having to jump between disconnected tools and workflows.',
     role: 'Product Designer, 2020–Present',
