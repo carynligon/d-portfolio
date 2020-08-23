@@ -124,6 +124,9 @@ a:hover {
   margin-top: var(--spacer-sm);
   --width: 9;
 }
+video {
+  display: block;
+}
 @media (max-width: 576px) {
   body {
     padding: 0 var(--spacer-md);

@@ -6,9 +6,9 @@
       </p>
       <h2>{{ copy.title }}</h2>
       <div class="tags">
-        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">
-          {{ tag }}
-        </span>
+        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">{{
+          tag
+        }}</span>
       </div>
       <div
         v-for="(paragraph, index) in copy.paragraphs"
@@ -42,8 +42,19 @@
       >
     </div>
     <div class="content column">
-      <div v-if="copy.images.length === 1" class="preview-image">
-        PREVIEW IMG
+      <div v-if="copy.images.length === 1" class="preview-video">
+        <video
+          width="100%"
+          muted
+          autoplay
+          loop
+          playsinline
+          disableRemotePlayback
+          currentTime="0"
+        >
+          <source src="~/assets/videos/other-1.webm" type="video/webm" />
+          <source src="~/assets/videos/other-1.mp4" type="video/mp4" />
+        </video>
       </div>
       <Carousel v-if="copy.images.length > 1" :perPage="1">
         <Slide
@@ -117,10 +128,14 @@ p {
 .quote::first-letter {
   margin-left: calc(var(--spacer-xs) * -1);
 }
-.preview-image {
-  border: 1px solid red;
-  height: 300px;
+.preview-video {
+  background-color: var(--gray);
+  overflow: hidden;
+  padding: 5%;
   width: 100%;
+}
+.preview-video video {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .visit-link {
   background-color: var(--black);

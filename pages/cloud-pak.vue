@@ -63,7 +63,20 @@
         <ContentSection v-bind:copy="copy.scalable" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE VID HERE</div>
+    <div class="project-feature-img video column">
+      <video
+        width="100%"
+        muted
+        autoplay
+        loop
+        playsinline
+        disableRemotePlayback
+        currentTime="0"
+      >
+        <source src="~/assets/videos/cloud-pak-4.webm" type="video/webm" />
+        <source src="~/assets/videos/cloud-pak-4.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="content container">
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.planning" />
@@ -152,12 +165,21 @@ export default Vue.extend({
 </script>
 
 <style>
+.project-feature-img.video {
+  background-color: var(--gray);
+  overflow: hidden;
+  padding: 5% 5% 0 5%;
+}
+.project-feature-img.video video {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 .project-feature-img {
   margin-top: var(--spacer-3xl);
   --width: 12;
 }
 .project-feature-img img {
   display: block;
+  height: 100%;
   width: 100%;
 }
 .img-container {
