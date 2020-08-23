@@ -125,6 +125,7 @@ export default Vue.extend({
 }
 .project-feature-img img {
   display: block;
+  height: 100%;
   width: 100%;
 }
 .img-container {

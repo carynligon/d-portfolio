@@ -4,9 +4,23 @@
       <Nav />
       <ProjectIntro v-bind:copy="copy.intro" />
     </div>
-    <div class="project-feature-img column">
-      FEATURE VIDEO HERE
-      <img />
+    <div class="project-feature-img video column">
+      <video
+        width="100%"
+        muted
+        autoplay
+        loop
+        playsinline
+        disableRemotePlayback
+        currentTime="0"
+        alt="Video showing scrolling through the experience guide homepage."
+      >
+        <source
+          src="~/assets/videos/experience-guide-1.webm"
+          type="video/webm"
+        />
+        <source src="~/assets/videos/experience-guide-1.mp4" type="video/mp4" />
+      </video>
       <div class="caption">
         Our Experience Guide brought together design teams and resources across
         brand, product, research, and strategy.
@@ -24,7 +38,7 @@
     <div class="project-feature-img container">
       <img
         src="~/assets/imgs/experience-guide/experience-guide-2-2x.png"
-        alt="Image showing site mape and screenshot of Github repo"
+        alt="Image showing site map and screenshot of Github repo"
       />
       <div class="caption">
         Working up front on site maps and collaborating in Github helped keep me
@@ -36,9 +50,23 @@
         <ContentSection v-bind:copy="copy.process" />
       </div>
     </div>
-    <div class="project-feature-img column">
-      FEATURE VIDEO HERE
-      <img />
+    <div class="project-feature-img video column">
+      <video
+        width="100%"
+        muted
+        autoplay
+        loop
+        playsinline
+        disableRemotePlayback
+        currentTime="0"
+        alt="Prototype of a page for a user persona."
+      >
+        <source
+          src="~/assets/videos/experience-guide-3.webm"
+          type="video/webm"
+        />
+        <source src="~/assets/videos/experience-guide-3.mp4" type="video/mp4" />
+      </video>
       <div class="caption">
         I used animated prototypes to quickly iterate and fine-tune
         microinteractions like scroll behavior, hover states, or breadcrumbs.
@@ -67,7 +95,9 @@
         <ContentSection v-bind:copy="copy.newSkills" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE VIDEO HERE</div>
+    <div class="project-feature-img video centered column">
+      <img src="~/assets/videos/experience-guide-5.gif" alt="alt text here" />
+    </div>
     <div class="img-container container">
       <div class="project-feature-img half column">
         <img
@@ -133,12 +163,25 @@ export default Vue.extend({
   margin-top: var(--spacer-3xl);
   --width: 12;
 }
+.project-feature-img.video {
+  background-color: var(--gray);
+  overflow: hidden;
+  padding: 5% 5% 0 5%;
+}
+.project-feature-img.video.centered {
+  padding: 5%;
+}
+.project-feature-img.video video,
+.project-feature-img.video img {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 .project-feature-img.half {
   margin-top: var(--spacer-3xl);
   --width: 6;
 }
 .project-feature-img img {
   display: block;
+  height: 100%;
   width: 100%;
 }
 .img-container {
