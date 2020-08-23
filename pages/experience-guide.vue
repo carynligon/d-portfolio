@@ -4,43 +4,67 @@
       <Nav />
       <ProjectIntro v-bind:copy="copy.intro" />
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">FEATURE VIDEO HERE</div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-sub column">
         <QuoteSection v-bind:copy="copy.systemsThinkingQuote" />
       </div>
       <div class="spacer column"></div>
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.problem" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">
+      <img
+        src="~/assets/imgs/experience-guide/experience-guide-2-2x.png"
+        alt="alt text here"
+      />
+    </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.process" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">FEATURE VIDEO HERE</div>
     <div class="content container">
-      <div class="content-left column" />
+      <div class="content-sub column" />
       <div class="spacer column" />
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.buildingHome" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE VID HERE</div>
+    <div class="project-feature-img column">
+      <img
+        src="~/assets/imgs/experience-guide/experience-guide-4-2x.png"
+        alt="alt text here"
+      />
+    </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.newSkills" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">FEATURE VIDEO HERE</div>
+    <div class="img-container container">
+      <div class="project-feature-img half column">
+        <img
+          src="~/assets/imgs/experience-guide/experience-guide-6-2x.png"
+          alt="alt text here"
+        />
+      </div>
+      <div class="project-feature-img half column">
+        <img
+          src="~/assets/imgs/experience-guide/experience-guide-7-2x.png"
+          alt="alt text here"
+        />
+      </div>
+    </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-sub column">
         <QuoteSection v-bind:copy="copy.philQuote" />
       </div>
       <div class="spacer column"></div>
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.outcomes" />
       </div>
     </div>
@@ -78,18 +102,22 @@ export default Vue.extend({
 
 <style>
 .project-feature-img {
-  border: 1px solid red;
-  height: 500px;
   margin-top: var(--spacer-3xl);
   --width: 12;
+}
+.project-feature-img.half {
+  margin-top: var(--spacer-3xl);
+  --width: 6;
+}
+.project-feature-img img {
+  display: block;
+  width: 100%;
 }
 .img-container {
   padding: 0;
   --width: 12;
 }
 .img-container .project-feature-img {
-  border: 1px solid red;
-  height: 300px;
   margin: 0;
   --width: 6;
 }

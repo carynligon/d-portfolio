@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .intro-container {
   margin-bottom: var(--spacer-3xl);
 }
@@ -62,12 +62,10 @@ h3 {
 .spacer {
   --width: 1;
 }
-.description,
-.content-left {
+.description {
   --width: 6;
 }
-.role-description,
-.content-right {
+.role-description {
   --width: 5;
 }
 .teammates-heading {
