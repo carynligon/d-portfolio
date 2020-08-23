@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p v-bind:class="{ quote: !copy.noQuotes, h1: true }">{{ copy.quote }}</p>
+    <p v-bind:class="{ quote: !copy.noQuotes, h2: true }">{{ copy.quote }}</p>
     <p class="author h3">{{ copy.author }}</p>
   </div>
 </template>
@@ -24,9 +24,10 @@ div {
 }
 .quote:first-letter,
 .quote::first-letter {
-  margin-left: calc(var(--font-size-body) * -1);
+  margin-left: -0.825rem;
 }
 .author {
-  color: var(--gray);
+  color: var(--dark-gray);
+  margin-top: var(--spacer-xs);
 }
 </style>

@@ -172,10 +172,10 @@
   width: 1.5rem;
 }
 .icon-color {
-  fill: #9e9e9e;
+  fill: var(--black);
 }
 svg:hover .icon-color {
-  fill: var(--black);
+  fill: var(--links);
 }
 @media (max-width: 768px) {
   .coolest-person-ever {
