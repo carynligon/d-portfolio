@@ -4,43 +4,73 @@
       <Nav />
       <ProjectIntro v-bind:copy="copy.intro" />
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">
+      <img
+        src="~/assets/imgs/accessibility/accessibility-1-2x.png"
+        alt="Cloud Pak for Security homepage with application links and dashboard"
+      />
+    </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-sub column">
         <QuoteSection v-bind:copy="copy.stats" />
       </div>
       <div class="spacer column"></div>
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.problem" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">
+      <img
+        src="~/assets/imgs/accessibility/accessibility-2-2x.png"
+        alt="alt text here"
+      />
+    </div>
     <div class="content container">
-      <div class="content-left column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.process" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">
+      <img
+        src="~/assets/imgs/accessibility/accessibility-3-2x.png"
+        alt="alt text here"
+      />
+    </div>
     <div class="content container">
-      <div class="content-left column" />
+      <div class="content-sub column" />
       <div class="spacer column" />
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.designForEveryone" />
       </div>
     </div>
-    <div class="project-feature-img column">FEATURE IMG HERE</div>
+    <div class="project-feature-img column">
+      <img
+        src="~/assets/imgs/accessibility/accessibility-4-2x.png"
+        alt="alt text here"
+      />
+    </div>
     <div class="img-container container column">
-      <div class="project-feature-img column">FEATURE IMG 1 HERE</div>
-      <div class="project-feature-img column">FEATURE IMG 2 HERE</div>
+      <div class="project-feature-img column">
+        <img
+          src="~/assets/imgs/accessibility/accessibility-5-2x.png"
+          alt="alt text here"
+        />
+      </div>
+      <div class="project-feature-img column">
+        <img
+          src="~/assets/imgs/accessibility/accessibility-6-2x.png"
+          alt="alt text here"
+        />
+      </div>
     </div>
     <div class="content container">
-      <div class="content-left column"></div>
+      <div class="content-sub column"></div>
       <div class="spacer column"></div>
-      <div class="content-right column">
+      <div class="content-main column">
         <ContentSection v-bind:copy="copy.outcomes" />
       </div>
     </div>
-    <BottomNav active="experienceGuide" />
+    <BottomNav active="accessibility" />
     <Footer />
   </div>
 </template>
@@ -74,18 +104,18 @@ export default Vue.extend({
 
 <style>
 .project-feature-img {
-  border: 1px solid red;
-  height: 500px;
   margin-top: var(--spacer-3xl);
   --width: 12;
+}
+.project-feature-img img {
+  display: block;
+  width: 100%;
 }
 .img-container {
   padding: 0;
   --width: 12;
 }
 .img-container .project-feature-img {
-  border: 1px solid red;
-  height: 300px;
   margin: 0;
   --width: 6;
 }

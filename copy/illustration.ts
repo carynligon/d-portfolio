@@ -8,49 +8,64 @@ export default {
   },
   illustrations: [
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-1-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-2-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-3-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-4-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-5-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-6-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-7-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-8-2x.png',
+      altText: 'alt text here'
     },
     {
-      src:
-        'https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images-medium/sleeping-puppy-on-white-background-square-dog-photography.jpg',
-      altText: 'sleepy pup'
+      src: 'illustration/illustration-9-2x.png',
+      altText: 'alt text here'
+    },
+    {
+      src: 'illustration/illustration-10-2x.png',
+      altText: 'alt text here'
+    },
+    {
+      src: 'illustration/illustration-11-2x.png',
+      altText: 'alt text here'
+    },
+    {
+      src: 'illustration/illustration-12-2x.png',
+      altText: 'alt text here'
+    },
+    {
+      src: 'illustration/illustration-13-2x.png',
+      altText: 'alt text here'
+    },
+    {
+      src: 'illustration/illustration-14-2x.png',
+      altText: 'alt text here'
+    },
+    {
+      src: 'illustration/illustration-15-2x.png',
+      altText: 'alt text here'
     }
   ]
 }
