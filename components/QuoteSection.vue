@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="quote h1">{{ copy.quote }}</p>
+    <p v-bind:class="{ quote: !copy.noQuotes, h1: true }">{{ copy.quote }}</p>
     <p class="author h3">{{ copy.author }}</p>
   </div>
 </template>
@@ -11,7 +11,8 @@ export default {
   props: {
     copy: {
       quote: { type: String },
-      author: { type: String }
+      author: { type: String },
+      noQuotes: { type: Boolean }
     }
   }
 }

@@ -6,9 +6,8 @@
       class="paragraph"
       v-for="(paragraph, index) in paragraphs"
       :key="'content-p-' + index"
-    >
-      {{ paragraph }}
-    </p>
+      v-html="paragraph"
+    ></p>
   </div>
 </template>
 

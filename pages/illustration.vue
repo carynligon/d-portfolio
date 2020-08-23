@@ -8,7 +8,8 @@
       <img
         v-for="(illustration, index) in copy.illustrations"
         :key="'illustration-' + index"
-        :src="illustration.src"
+        :alt="illustration.alt"
+        v-bind:src="getImgUrl(illustration.src)"
       />
     </div>
     <BottomNav active="illustration" />
@@ -36,6 +37,11 @@ export default {
     return {
       copy
     }
+  },
+  methods: {
+    getImgUrl(pic) {
+      return require(`../assets/imgs/${pic}`)
+    }
   }
 }
 </script>
@@ -45,6 +51,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: var(--spacer-3xl);
 }
 img {
   height: auto;
