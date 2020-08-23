@@ -11,6 +11,7 @@ body {
   --font-size-h1: 2.625rem;
   --font-size-h2: 2.125rem;
   --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
   --font-size-body: 1.125rem;
   --font-size-body-lg: 1.25rem;
   --font-size-body-sm: 1rem;
@@ -84,14 +85,6 @@ a:hover {
 .spacer {
   --width: 1;
 }
-@media (max-width: 576px) {
-  h1,
-  .h1 {
-    font-size: var(--font-size-h2);
-    font-weight: 400;
-    line-height: var(--font-size-h1);
-  }
-}
 .content-main {
   --width: 6;
 }
@@ -130,5 +123,53 @@ a:hover {
   margin-bottom: var(--spacer-xs);
   margin-top: var(--spacer-sm);
   --width: 9;
+}
+@media (max-width: 576px) {
+  body {
+    padding: 0 var(--spacer-md);
+  }
+  p,
+  li,
+  a {
+    line-height: 1.75rem;
+  }
+  h1,
+  .h1 {
+    font-size: var(--font-size-h2);
+    font-weight: 400;
+    line-height: var(--font-size-h1);
+  }
+  h2,
+  .h2 {
+    font-size: var(--font-size-h3);
+    font-weight: 400;
+    line-height: var(--font-size-h2);
+  }
+  h3,
+  .h3 {
+    font-size: var(--font-size-h4);
+    font-weight: 400;
+    line-height: var(--font-size-h3);
+  }
+  .caption {
+    display: none;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .content-main {
+    --width: 12;
+  }
+  .content-sub {
+    --width: 12;
+    margin-top: 0;
+    margin-bottom: var(--spacer-2xl);
+  }
+  .content-sub.placeholder {
+    margin: 0;
+  }
 }
 </style>
