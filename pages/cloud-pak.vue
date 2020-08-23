@@ -9,6 +9,10 @@
         src="~/assets/imgs/cloud-pak/cloud-pak-1-2x.png"
         alt="Cloud Pak for Security homepage with application links and dashboard"
       />
+      <div class="caption">
+        Our homepage is a jumping off point for users through dashboards,
+        onboarding experiences, and quick access to capabilities.
+      </div>
     </div>
     <div class="content container">
       <div class="content-sub column">
@@ -17,6 +21,12 @@
       <div class="spacer column"></div>
       <div class="content-main column">
         <ContentSection v-bind:copy="copy.problem" />
+        <a
+          href="https://www.ibm.com/products/cloud-pak-for-security"
+          target="_blank"
+          class="button"
+          >Visit Cloud Pak Site</a
+        >
       </div>
     </div>
     <div class="project-feature-img container">
@@ -24,6 +34,10 @@
         src="~/assets/imgs/cloud-pak/cloud-pak-2-2x.png"
         alt="User flow diagram showing the old dashboard experience"
       />
+      <div class="caption">
+        Audit of the existing, legacy dashboarding experience to understand
+        gaps, pain points, and user needs.
+      </div>
     </div>
     <div class="content container">
       <div class="content-main column">
@@ -35,6 +49,10 @@
         src="~/assets/imgs/cloud-pak/cloud-pak-3-2x.png"
         alt="Divided image showing process screenshots of a user flow diagram and a mid-fidelity prototype"
       />
+      <div class="caption">
+        User flows and mid-fidelity designs help us quickly align around the
+        overall user experience before investing too much time.
+      </div>
     </div>
     <div class="content container">
       <div class="content-sub column" />
@@ -54,9 +72,13 @@
         src="~/assets/imgs/cloud-pak/cloud-pak-5-2x.png"
         alt="Invision prototype for selecting widgets to add to a dashboard"
       />
+      <div class="caption">
+        Invision prototype used for user testing sessions. Helped us understand
+        how users edit and create dashboards and widgets.
+      </div>
     </div>
     <div class="content container">
-      <div class="content-sub column">
+      <div class="content-sub no-title column">
         <QuoteSection v-bind:copy="copy.peterQuote" />
       </div>
       <div class="spacer column"></div>
@@ -66,7 +88,6 @@
     </div>
     <div class="project-feature-img container">
       <img
-        class="project-feature-img"
         src="~/assets/imgs/cloud-pak/cloud-pak-6-2x.png"
         alt="Screenshot showing a dropdown for a user to change dashboards"
       />
@@ -85,6 +106,10 @@
           src="~/assets/imgs/cloud-pak/cloud-pak-8-2x.png"
           alt="Documentation showing feedback and proposed updates to widget card components"
         />
+      </div>
+      <div class="caption">
+        Updating shared dashboards, widgets details, and how users create new
+        dashboards were all influenced by user testing.
       </div>
     </div>
     <div class="content container">
@@ -143,5 +168,8 @@ export default Vue.extend({
 }
 .content {
   margin-top: var(--spacer-2xl);
+}
+.content-sub.no-title {
+  margin-top: 0;
 }
 </style>

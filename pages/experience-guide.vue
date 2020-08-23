@@ -14,10 +14,10 @@
         <ContentSection v-bind:copy="copy.problem" />
       </div>
     </div>
-    <div class="project-feature-img column">
+    <div class="project-feature-img container">
       <img
         src="~/assets/imgs/experience-guide/experience-guide-2-2x.png"
-        alt="alt text here"
+        alt="Image showing site mape and screenshot of Github repo"
       />
     </div>
     <div class="content container">

@@ -68,14 +68,20 @@ export default {
   display: flex;
   margin-top: 5rem;
   padding: 0;
+  transition: 150ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-nav-links a {
+  color: var(--dark-gray);
+}
+.bottom-nav-links a:hover {
   color: var(--black);
+  text-decoration: none;
 }
 .bottom-nav-links a.active {
-  font-weight: 600;
+  color: var(--black);
 }
 .bottom-nav-links span {
+  color: var(--dark-gray);
   margin: 0 1rem;
 }
 </style>

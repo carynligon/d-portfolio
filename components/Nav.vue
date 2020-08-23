@@ -1,6 +1,6 @@
 <template>
   <nav class="nav column container">
-    <a href class="home-link column"><span>👋</span>Derrick Ligon</a>
+    <a href="/" class="home-link column"><span>👋</span>Derrick Ligon</a>
     <ul class="nav-links column">
       <li>
         <a href="/">Work</a>

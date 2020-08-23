@@ -1,14 +1,13 @@
 <template>
   <div>
-    <h4 v-if="copy.title">{{ copy.title }}</h4>
-    <p class="subtitle h2" v-if="copy.subtitle">{{ copy.subtitle }}</p>
+    <h2 class="section-title" v-if="copy.title">{{ copy.title }}</h2>
+    <p class="subtitle h3" v-if="copy.subtitle">{{ copy.subtitle }}</p>
     <p
       class="paragraph"
       v-for="(paragraph, index) in paragraphs"
       :key="'content-p-' + index"
-    >
-      {{ paragraph }}
-    </p>
+      v-html="paragraph"
+    />
   </div>
 </template>
 
@@ -30,19 +29,15 @@ export default {
 }
 </script>
 
-<style scoped>
-div {
-  --width: 6;
-}
-h4 {
-  font-size: var(--font-size-h1);
-  font-weight: normal;
-  margin-bottom: 1.25rem;
+<style>
+.section-title {
+  margin-bottom: var(--spacer-sm);
 }
 .subtitle {
-  margin-bottom: var(--spacer-md);
+  margin-bottom: var(--spacer-sm);
 }
+
 .paragraph {
-  margin-bottom: var(--spacer-md);
+  margin-bottom: var(--spacer-sm);
 }
 </style>
