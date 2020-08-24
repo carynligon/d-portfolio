@@ -20,6 +20,7 @@ export default {
             'From creating illustration to providing feedback to other teams and contractors, from creating guidelines for my immediate team to creating standards to be used across the company, my experience with illustration has been diverse. Most recently, I was part of a small guild of designers across different business who defined illustration principles, styles, and best practices to be included in the IBM Design Language. After work with a smaller team of designers and an outside agencies, we published our first version of illustration guidelines in April of 2020.'
         }
       ],
+      link: 'https://www.ibm.com/design/language/illustration/overview/',
       images: [{}]
     },
     {
@@ -41,7 +42,6 @@ export default {
           text: '— Patrick Lowden, Variable Editor in Chief'
         }
       ],
-      link: 'test',
       images: [
         {
           src: 'other/variable-1.png',
