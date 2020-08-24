@@ -14,6 +14,7 @@
         disableRemotePlayback
         currentTime="0"
         alt="Video showing scrolling through the experience guide homepage."
+        aria-labelledby="experience-guide-1-caption"
       >
         <source
           src="~/assets/videos/experience-guide-1.webm"
@@ -21,10 +22,10 @@
         />
         <source src="~/assets/videos/experience-guide-1.mp4" type="video/mp4" />
       </video>
-      <div class="caption">
-        Our Experience Guide brought together design teams and resources across
-        brand, product, research, and strategy.
-      </div>
+    </div>
+    <div class="caption" id="experience-guide-1-caption">
+      Our Experience Guide brought together design teams and resources across
+      brand, product, research, and strategy.
     </div>
     <div class="content container">
       <div class="content-sub column">
@@ -39,8 +40,9 @@
       <img
         src="~/assets/imgs/experience-guide/experience-guide-2-2x.png"
         alt="Image showing site map and screenshot of Github repo"
+        aria-labelledby="experience-guide-2-caption"
       />
-      <div class="caption">
+      <div class="caption" id="experience-guide-2-captio">
         Working up front on site maps and collaborating in Github helped keep me
         and Randy aligned as a team and with leadership.
       </div>
@@ -60,6 +62,7 @@
         disableRemotePlayback
         currentTime="0"
         alt="Prototype of a page for a user persona."
+        aria-labelledby="experience-guide-3-caption"
       >
         <source
           src="~/assets/videos/experience-guide-3.webm"
@@ -67,10 +70,10 @@
         />
         <source src="~/assets/videos/experience-guide-3.mp4" type="video/mp4" />
       </video>
-      <div class="caption">
-        I used animated prototypes to quickly iterate and fine-tune
-        microinteractions like scroll behavior, hover states, or breadcrumbs.
-      </div>
+    </div>
+    <div class="caption" id="experience-guide-3-caption">
+      I used animated prototypes to quickly iterate and fine-tune
+      microinteractions like scroll behavior, hover states, or breadcrumbs.
     </div>
     <div class="content container">
       <div class="content-sub placeholder column" />
@@ -83,8 +86,9 @@
       <img
         src="~/assets/imgs/experience-guide/experience-guide-4-2x.png"
         alt="Screenshot of photography resources within the marketing assets page of our experience guide."
+        aria-labelledby="experience-guide-4-caption"
       />
-      <div class="caption">
+      <div class="caption" id="experience-guide-4-caption">
         As the site and list of involved teams have grown, the Marketing assets
         page remains the most popular page, giving designers a single place to
         find the most up to date guidelines and assets.
@@ -98,7 +102,10 @@
     <div class="project-feature-img video centered column">
       <img src="~/assets/videos/experience-guide-5.gif" alt="alt text here" />
     </div>
-    <div class="img-container container">
+    <div
+      class="img-container container"
+      aria-labelledby="experience-guide-6-caption"
+    >
       <div class="project-feature-img half column">
         <img
           src="~/assets/imgs/experience-guide/experience-guide-6-2x.png"
@@ -111,7 +118,7 @@
           alt="Image showing the mobile view of a research catalog."
         />
       </div>
-      <div class="caption">
+      <div class="caption" id="experience-guide-6-caption">
         Adding a catalog of research findings was an key part of our work. We
         considered how the research would be consumed to allow designers to
         utilize the research throughout their design process.

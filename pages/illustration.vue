@@ -39,8 +39,8 @@ export default {
     }
   },
   methods: {
-    getImgUrl(pic) {
-      return require(`../assets/imgs/${pic}`)
+    getImgUrl(path) {
+      return require(`../assets/imgs/${path}`)
     }
   }
 }

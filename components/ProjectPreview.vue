@@ -6,9 +6,9 @@
       </p>
       <h2>{{ copy.title }}</h2>
       <div class="tags">
-        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">{{
-          tag
-        }}</span>
+        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">
+          {{ tag }}
+        </span>
       </div>
       <div
         v-for="(paragraph, index) in copy.paragraphs"
@@ -51,6 +51,7 @@
           playsinline
           disableRemotePlayback
           currentTime="0"
+          alt="alt text here"
         >
           <source src="~/assets/videos/other-1.webm" type="video/webm" />
           <source src="~/assets/videos/other-1.mp4" type="video/mp4" />
@@ -62,7 +63,7 @@
           v-for="(image, index) in copy.images"
           :key="'project-image-' + index"
         >
-          <img :src="image.src" :alt="image.altText" />
+          <img :src="getImgUrl(image.src)" :alt="image.altText" />
         </Slide>
       </Carousel>
     </div>
@@ -87,6 +88,11 @@ export default {
       paragraphs: { type: Array },
       link: { type: String },
       images: { type: Array }
+    }
+  },
+  methods: {
+    getImgUrl(path) {
+      return require(`../assets/imgs/${path}`)
     }
   }
 }
@@ -153,7 +159,6 @@ li {
   font-size: var(--font-size-body-sm);
 }
 .carousel-slide {
-  max-height: 500px;
   width: 100%;
 }
 .carousel-slide img {
