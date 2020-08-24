@@ -100,7 +100,10 @@
       </div>
     </div>
     <div class="project-feature-img video centered column">
-      <img src="~/assets/videos/experience-guide-5.gif" alt="alt text here" />
+      <img
+        src="~/assets/videos/experience-guide-5.gif"
+        alt="Video showing a cursor hovering over a UI card within a catalog of research artifacts."
+      />
     </div>
     <div
       class="img-container container"

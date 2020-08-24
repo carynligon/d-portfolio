@@ -9,12 +9,12 @@ export default {
     teammates: [
       {
         name: 'Hayley Hughes',
-        link: '',
+        link: 'https://www.hayley.work/',
         role: 'Design Lead'
       },
       {
         name: 'Evan Maeda',
-        link: '',
+        link: 'https://www.linkedin.com/in/evanmaeda/',
         role: 'Designer'
       }
     ]

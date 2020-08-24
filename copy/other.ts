@@ -45,23 +45,27 @@ export default {
       images: [
         {
           src: 'other/variable-1.png',
-          altText: 'alt text here'
+          altText: 'Magazine spread with the article title "Back on Track"'
         },
         {
           src: 'other/variable-2.png',
-          altText: 'alt text here'
+          altText:
+            'Magazine spread with the article title "The Fourth Dimension"'
         },
         {
           src: 'other/variable-3.png',
-          altText: 'alt text here'
+          altText:
+            'Magazine spread about spinal health with a collage about spine anatomy with a giraffe.'
         },
         {
           src: 'other/variable-4.png',
-          altText: 'alt text here'
+          altText:
+            'A choose-your-own-adventure spread with scribbled lines going between options.'
         },
         {
           src: 'other/variable-5.png',
-          altText: 'alt text here'
+          altText:
+            'Title spread for an article called "Tipping Points" with a blue illustration.'
         }
       ]
     },
@@ -86,15 +90,17 @@ export default {
       images: [
         {
           src: 'other/phobio-1.png',
-          altText: 'alt text here'
+          altText:
+            'iPad with a yellow screen showing a trade-in experience for Sprint within Walgreens.'
         },
         {
           src: 'other/phobio-2.png',
-          altText: 'alt text here'
+          altText:
+            'iPad with a yellow screen showing a trade-in experience for Sprint within Walgreens.'
         },
         {
           src: 'other/phobio-3.png',
-          altText: 'alt text here'
+          altText: 'Screenshot of the Phobio intranet redesign.'
         }
       ]
     },
@@ -128,39 +134,40 @@ export default {
           'If you’re interested in learning more about this project please reach out. Teammate case studies: ',
         teammates: [
           {
-            name: 'Shelby Aranyi',
-            link: ''
-          },
-          {
             name: 'McKenzie Carlile',
-            link: ''
+            link: 'http://www.mckenziecarlile.com/ibm.html'
           },
           {
             name: 'Chengqi Zhu',
-            link: ''
+            link: 'http://chengqizhu.com/'
           }
         ]
       },
       images: [
         {
           src: 'other/iq-1.png',
-          altText: 'alt text here'
+          altText:
+            'Data collection detail page that lists task details and a list of users.'
         },
         {
           src: 'other/iq-2.png',
-          altText: 'alt text here'
+          altText:
+            'Photo of me facilitating a journey map exercise during a user testing session with Toyota.'
         },
         {
           src: 'other/iq-3.png',
-          altText: 'alt text here'
+          altText:
+            'Screenshot of a interview template creation process for paralegals.'
         },
         {
           src: 'other/iq-4.png',
-          altText: 'alt text here'
+          altText:
+            'Dialog for adding custodians to a data requesting with a second screenshot of an empty state illustration in the back.'
         },
         {
           src: 'other/iq-5.png',
-          altText: 'alt text here'
+          altText:
+            'Zoomed in detail image of the comment section of a task overview UI.'
         }
       ]
     },
@@ -177,11 +184,13 @@ export default {
       images: [
         {
           src: 'other/brew-1.png',
-          altText: 'alt text here'
+          altText:
+            'Three iPhone screens showing different pages within a DIY coffee brewing app.'
         },
         {
           src: 'other/brew-2.png',
-          altText: 'alt text here'
+          altText:
+            'Three iPhone screens showing different pages within a DIY coffee brewing app.'
         }
       ]
     }
