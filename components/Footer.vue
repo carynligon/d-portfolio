@@ -128,7 +128,7 @@
     </ul>
     <div class="coolest-person-ever column">
       👩‍💻 Website built by
-      <a href="https://carynligon.com" target="_blank">Caryn Ligon</a>
+      <a href="http://carynligon.com" target="_blank">Caryn Ligon</a>
     </div>
   </nav>
 </template>

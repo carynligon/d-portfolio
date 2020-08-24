@@ -6,7 +6,11 @@
         <a href="/">Work</a>
       </li>
       <li>
-        <a href>Resume</a>
+        <a
+          href="https://www.dropbox.com/s/k1ijp2npufbmeak/Derrick-Ligon-Resume.pdf?dl=0"
+          target="_blank"
+          >Resume</a
+        >
       </li>
     </ul>
   </nav>
