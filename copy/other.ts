@@ -20,7 +20,7 @@ export default {
             'From creating illustration to providing feedback to other teams and contractors, from creating guidelines for my immediate team to creating standards to be used across the company, my experience with illustration has been diverse. Most recently, I was part of a small guild of designers across different business who defined illustration principles, styles, and best practices to be included in the IBM Design Language. After work with a smaller team of designers and an outside agencies, we published our first version of illustration guidelines in April of 2020.'
         }
       ],
-      images: [{ src: '', altText: '' }]
+      images: [{}]
     },
     {
       title: 'Spreading design stories across IBM.',
@@ -44,19 +44,24 @@ export default {
       link: 'test',
       images: [
         {
-          src:
-            'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
-          altText: 'squirrel 1'
+          src: 'other/variable-1.png',
+          altText: 'alt text here'
         },
         {
-          src:
-            'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
-          altText: 'squirrel 2'
+          src: 'other/variable-2.png',
+          altText: 'alt text here'
         },
         {
-          src:
-            'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
-          altText: 'squirrel 3'
+          src: 'other/variable-3.png',
+          altText: 'alt text here'
+        },
+        {
+          src: 'other/variable-4.png',
+          altText: 'alt text here'
+        },
+        {
+          src: 'other/variable-5.png',
+          altText: 'alt text here'
         }
       ]
     },
@@ -80,19 +85,16 @@ export default {
       ],
       images: [
         {
-          src:
-            'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
-          altText: 'squirrel 1'
+          src: 'other/phobio-1.png',
+          altText: 'alt text here'
         },
         {
-          src:
-            'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
-          altText: 'squirrel 2'
+          src: 'other/phobio-2.png',
+          altText: 'alt text here'
         },
         {
-          src:
-            'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
-          altText: 'squirrel 3'
+          src: 'other/phobio-3.png',
+          altText: 'alt text here'
         }
       ]
     },
@@ -141,19 +143,24 @@ export default {
       },
       images: [
         {
-          src:
-            'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
-          altText: 'squirrel 1'
+          src: 'other/iq-1.png',
+          altText: 'alt text here'
         },
         {
-          src:
-            'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
-          altText: 'squirrel 2'
+          src: 'other/iq-2.png',
+          altText: 'alt text here'
         },
         {
-          src:
-            'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
-          altText: 'squirrel 3'
+          src: 'other/iq-3.png',
+          altText: 'alt text here'
+        },
+        {
+          src: 'other/iq-4.png',
+          altText: 'alt text here'
+        },
+        {
+          src: 'other/iq-5.png',
+          altText: 'alt text here'
         }
       ]
     },
@@ -169,19 +176,12 @@ export default {
       ],
       images: [
         {
-          src:
-            'https://images.theconversation.com/files/334473/original/file-20200512-82357-11i5o76.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
-          altText: 'squirrel 1'
+          src: 'other/brew-1.png',
+          altText: 'alt text here'
         },
         {
-          src:
-            'https://www.pbs.org/wgbh/nova/media/original_images/iStock-473012660.jpg',
-          altText: 'squirrel 2'
-        },
-        {
-          src:
-            'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/07/1024/512/iStock-466395505.jpg?ve=1&tl=1',
-          altText: 'squirrel 3'
+          src: 'other/brew-2.png',
+          altText: 'alt text here'
         }
       ]
     }

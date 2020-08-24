@@ -15,11 +15,23 @@
             <p class="current-role-text">UX Designer @ IBM, since 2018</p>
             <div class="email">
               <p>hello@derrickligon.com</p>
-              <div>
+              <textarea
+                id="email-copy"
+                value="hello@derrickligon.com"
+                style="opacity: 0; height: 0; position: absolute;"
+              ></textarea>
+              <div
+                v-bind:class="{
+                  ['email-svg-wrapper']: true,
+                  hover: copyText === 'Copied!'
+                }"
+                v-on:click="copyEmail"
+              >
                 <img
                   alt="click to copy email address"
                   src="~/assets/svgs/copy.svg"
                 />
+                <div class="copy-text">{{ copyText }}</div>
               </div>
             </div>
           </div>
@@ -57,6 +69,22 @@ export default Vue.extend({
     Nav,
     ProjectMenu,
     Footer
+  },
+  methods: {
+    copyEmail() {
+      const inputEl = document.getElementById('email-copy')
+      inputEl.select()
+      document.execCommand('copy')
+      this.copyText = 'Copied!'
+      setTimeout(() => {
+        this.copyText = 'Copy email'
+      }, 1500)
+    }
+  },
+  data() {
+    return {
+      copyText: 'Copy email'
+    }
   }
 })
 </script>
@@ -104,20 +132,40 @@ h3 {
 .roles .email p {
   margin: 0;
 }
-.email div {
+.email .email-svg-wrapper {
   align-items: center;
   border-radius: 4px;
   display: flex;
   height: 2.25rem;
   justify-content: center;
   margin-left: 6px;
+  position: relative;
   width: 2.25rem;
+}
+.copy-text {
+  background-color: var(--black);
+  border-radius: 4px;
+  color: #fff;
+  content: 'Copy email';
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0;
+  padding: 0.375rem 0.5rem;
+  position: absolute;
+  top: 1.75rem;
+  white-space: nowrap;
+}
+.email-svg-wrapper:hover .copy-text,
+.email-svg-wrapper.hover .copy-text {
+  opacity: 1;
+  top: 2.5rem;
+  transition: 150ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email img {
   height: 1.25rem;
   width: 1.25rem;
 }
-.email div:hover {
+.email .email-svg-wrapper:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.04);
 }
