@@ -72,7 +72,8 @@ export default Vue.extend({
   },
   methods: {
     copyEmail() {
-      const inputEl = document.getElementById('email-copy')
+      const inputEl = document.getElementById('email-copy') || {}
+      // @ts-ignore
       inputEl.select()
       document.execCommand('copy')
       this.copyText = 'Copied!'
