@@ -1,14 +1,40 @@
 <template>
   <div class="container">
+    <div class="content column">
+      <div v-if="copy.images.length === 1" class="preview-video">
+        <video
+          width="100%"
+          muted
+          autoplay
+          loop
+          playsinline
+          disableRemotePlayback
+          currentTime="0"
+          alt="alt text here"
+        >
+          <source src="~/assets/videos/other-1.webm" type="video/webm" />
+          <source src="~/assets/videos/other-1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <Carousel v-if="copy.images.length > 1" :perPage="1">
+        <Slide
+          class="carousel-slide"
+          v-for="(image, index) in copy.images"
+          :key="'project-image-' + index"
+        >
+          <img :src="getImgUrl(image.src)" :alt="image.altText" />
+        </Slide>
+      </Carousel>
+    </div>
     <div class="content left column">
       <p class="date">
         {{ copy.company ? `${copy.company} | ` : '' }}{{ copy.date }}
       </p>
       <h2>{{ copy.title }}</h2>
       <div class="tags">
-        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">
-          {{ tag }}
-        </span>
+        <span v-for="(tag, index) in copy.tags" :key="'tag-' + index">{{
+          tag
+        }}</span>
       </div>
       <div
         v-for="(paragraph, index) in copy.paragraphs"
@@ -40,32 +66,6 @@
       <a class="visit-link" v-if="copy.link" :href="copy.link"
         >Visit the site</a
       >
-    </div>
-    <div class="content column">
-      <div v-if="copy.images.length === 1" class="preview-video">
-        <video
-          width="100%"
-          muted
-          autoplay
-          loop
-          playsinline
-          disableRemotePlayback
-          currentTime="0"
-          alt="Video scrolling through the illustration overview page of the IBM Design Language."
-        >
-          <source src="~/assets/videos/other-1.webm" type="video/webm" />
-          <source src="~/assets/videos/other-1.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <Carousel v-if="copy.images.length > 1" :perPage="1">
-        <Slide
-          class="carousel-slide"
-          v-for="(image, index) in copy.images"
-          :key="'project-image-' + index"
-        >
-          <img :src="getImgUrl(image.src)" :alt="image.altText" />
-        </Slide>
-      </Carousel>
     </div>
   </div>
 </template>
@@ -100,6 +100,7 @@ export default {
 
 <style scoped>
 .container {
+  flex-direction: row-reverse;
   margin-top: 7.5rem;
 }
 .content {
@@ -123,7 +124,7 @@ h2 {
 .tags span {
   background-color: var(--gray);
   border-radius: 1rem;
-  margin-right: 1rem;
+  margin-right: var(--spacer-xs);
   margin-bottom: var(--spacer-xs);
   padding: var(--spacer-xs) 1rem;
 }
@@ -137,7 +138,7 @@ p {
 .preview-video {
   background-color: var(--gray);
   overflow: hidden;
-  padding: 5%;
+  padding: 5.6% 5%;
   width: 100%;
 }
 .preview-video video {
@@ -167,5 +168,26 @@ li {
 }
 .VueCarousel-pagination {
   margin-top: calc(var(--spacer-md * -1));
+}
+@media (max-width: 768px) {
+  .container {
+    margin-top: var(--spacer-3xl);
+  }
+  .content {
+    --width: 12;
+  }
+  .content.left {
+    margin-bottom: 5rem;
+  }
+  .date {
+    margin-top: var(--spacer-lg);
+  }
+  .bottom-nav {
+    margin-top: 0;
+  }
+  .tags {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+  }
 }
 </style>

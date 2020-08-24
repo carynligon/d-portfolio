@@ -54,7 +54,7 @@ export default {
   margin-top: var(--spacer-3xl);
 }
 img {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -62,7 +62,6 @@ img {
     justify-content: flex-start;
   }
   img {
-    height: auto;
     width: 50%;
   }
 }

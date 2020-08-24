@@ -17,13 +17,16 @@
               <p>hello@derrickligon.com</p>
               <textarea
                 id="email-copy"
+                disabled="true"
                 value="hello@derrickligon.com"
-                style="opacity: 0; height: 0; position: absolute;"
-              ></textarea>
+                style="opacity: 0; position: absolute;"
+              >
+hello@derrickligon.com</textarea
+              >
               <div
                 v-bind:class="{
                   ['email-svg-wrapper']: true,
-                  hover: copyText === 'Copied!'
+                  hover: hover
                 }"
                 v-on:click="copyEmail"
               >
@@ -36,7 +39,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="spacer column"></div> -->
         <div class="previous-roles column">
           <h3>Previously</h3>
           <ul class="role-content">
@@ -71,20 +73,34 @@ export default Vue.extend({
     Footer
   },
   methods: {
+    setHoverState() {
+      this.copyText = 'Copied!'
+      this.hover = true
+      const hoverTimeout = setTimeout(() => {
+        this.hover = false
+        clearTimeout(hoverTimeout)
+      }, 1300)
+      const textTimeout = setTimeout(() => {
+        this.copyText = 'Copy email'
+        clearTimeout(textTimeout)
+      }, 1500)
+    },
     copyEmail() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText('hello@derrickligon.com')
+        return this.setHoverState()
+      }
       const inputEl = document.getElementById('email-copy') || {}
       // @ts-ignore
       inputEl.select()
       document.execCommand('copy')
-      this.copyText = 'Copied!'
-      setTimeout(() => {
-        this.copyText = 'Copy email'
-      }, 1500)
+      return this.setHoverState()
     }
   },
   data() {
     return {
-      copyText: 'Copy email'
+      copyText: 'Copy email',
+      hover: false
     }
   }
 })
@@ -154,6 +170,7 @@ h3 {
   padding: 0.375rem 0.5rem;
   position: absolute;
   top: 1.75rem;
+  transition: 150ms all cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
 }
 .email-svg-wrapper:hover .copy-text,
