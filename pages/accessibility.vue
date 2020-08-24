@@ -27,7 +27,7 @@
     <div class="project-feature-img column">
       <img
         src="~/assets/imgs/accessibility/accessibility-2-2x.png"
-        alt="alt text here"
+        alt="Spread from accessibility handboook that says Inclusive Design is Good Business."
         aria-labelledby="accessibility-2-caption"
       />
       <div class="caption" id="accessibility-2-caption">
@@ -43,7 +43,7 @@
     <div class="project-feature-img column">
       <img
         src="~/assets/imgs/accessibility/accessibility-3-2x.png"
-        alt="alt text here"
+        alt="Two screenshots showing accessibility coding tips and details about color accessibility"
         aria-labelledby="accessibility-3-caption"
       />
       <div class="caption" id="accessibility-3s-caption">
@@ -64,20 +64,20 @@
     >
       <img
         src="~/assets/imgs/accessibility/accessibility-4-2x.png"
-        alt="alt text here"
+        alt="The cover of the IBM Accessibility Handbook with accessibility related illustrations."
       />
     </div>
     <div class="img-container container column">
       <div class="project-feature-img column">
         <img
           src="~/assets/imgs/accessibility/accessibility-5-2x.png"
-          alt="alt text here"
+          alt="First page of the handbook with the title of One size does not fit all."
         />
       </div>
       <div class="project-feature-img column">
         <img
           src="~/assets/imgs/accessibility/accessibility-6-2x.png"
-          alt="alt text here"
+          alt="The online landing page for the offering managemeent section of the handbook."
         />
       </div>
       <div class="caption" id="accessibility-4-caption">

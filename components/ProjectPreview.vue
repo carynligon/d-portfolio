@@ -51,7 +51,7 @@
           playsinline
           disableRemotePlayback
           currentTime="0"
-          alt="alt text here"
+          alt="Video scrolling through the illustration overview page of the IBM Design Language."
         >
           <source src="~/assets/videos/other-1.webm" type="video/webm" />
           <source src="~/assets/videos/other-1.mp4" type="video/mp4" />
