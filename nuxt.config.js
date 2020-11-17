@@ -18,7 +18,12 @@ export default {
       { rel: 'stylesheet', href: '/colors.css' },
       { rel: 'stylesheet', href: '/font.css' },
       { rel: 'stylesheet', href: '/grid.css' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href:
+          'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/waving-hand_1f44b.png'
+      }
     ]
   },
   /*
