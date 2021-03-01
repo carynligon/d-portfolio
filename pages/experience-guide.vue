@@ -38,7 +38,7 @@
     </div>
     <div class="project-feature-img container">
       <img
-        src="~/assets/imgs/experience-guide/experience-guide-2-2x.png"
+        src="~/assets/imgs/experience-guide/experience-guide-2-2x.jpg"
         alt="Image showing site map and screenshot of Github repo"
         aria-labelledby="experience-guide-2-caption"
       />
@@ -84,7 +84,7 @@
     </div>
     <div class="project-feature-img column">
       <img
-        src="~/assets/imgs/experience-guide/experience-guide-4-2x.png"
+        src="~/assets/imgs/experience-guide/experience-guide-4-2x.jpg"
         alt="Screenshot of photography resources within the marketing assets page of our experience guide."
         aria-labelledby="experience-guide-4-caption"
       />
@@ -111,13 +111,13 @@
     >
       <div class="project-feature-img half column">
         <img
-          src="~/assets/imgs/experience-guide/experience-guide-6-2x.png"
+          src="~/assets/imgs/experience-guide/experience-guide-6-2x.jpg"
           alt="Screenshot of the research section of the experience guide homepage"
         />
       </div>
       <div class="project-feature-img half column">
         <img
-          src="~/assets/imgs/experience-guide/experience-guide-7-2x.png"
+          src="~/assets/imgs/experience-guide/experience-guide-7-2x.jpg"
           alt="Image showing the mobile view of a research catalog."
         />
       </div>
