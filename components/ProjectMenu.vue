@@ -5,12 +5,12 @@
         <p>IBM Cloud Pak for Security</p>
       </div>
       <img
-        src="~/assets/imgs/index/cloud-pak-2x.png"
+        src="~/assets/imgs/index/cloud-pak-2x.jpg"
         alt="A user flow diagram for creating dashboards"
       />
       <img
         class="cloud-pak-sm"
-        src="~/assets/imgs/index/cloud-pak-sm-2x.png"
+        src="~/assets/imgs/index/cloud-pak-sm-2x.jpg"
         alt="A user flow diagram for creating dashboards"
       />
     </a>
@@ -19,7 +19,7 @@
         <p>IBM Security Experience Guide</p>
       </div>
       <img
-        src="~/assets/imgs/index/experience-guide-2x.png"
+        src="~/assets/imgs/index/experience-guide-2x.jpg"
         alt="Screenshot of the IBM Security Experience Guide"
       />
     </a>
@@ -28,7 +28,7 @@
         <p>IBM Accessibility Handbook</p>
       </div>
       <img
-        src="~/assets/imgs/index/accessibility-2x.png"
+        src="~/assets/imgs/index/accessibility-2x.jpg"
         alt="Landing page for the Design section of the IBM Accessibility Handbook"
       />
     </a>
@@ -37,7 +37,7 @@
         <p>Other Work</p>
       </div>
       <img
-        src="~/assets/imgs/index/other-2x.png"
+        src="~/assets/imgs/index/other-2x.jpg"
         alt="iPad showing a a device trade-in experience for Sprint"
       />
     </a>
