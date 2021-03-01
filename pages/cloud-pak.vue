@@ -6,7 +6,7 @@
     </div>
     <div class="project-feature-img container">
       <img
-        src="~/assets/imgs/cloud-pak/cloud-pak-1-2x.png"
+        src="~/assets/imgs/cloud-pak/cloud-pak-1-2x.jpg"
         alt="Cloud Pak for Security homepage with application links and dashboard"
         aria-labelledby="cloud-pak-1-caption"
       />
@@ -34,7 +34,7 @@
     </div>
     <div class="project-feature-img container">
       <img
-        src="~/assets/imgs/cloud-pak/cloud-pak-2-2x.png"
+        src="~/assets/imgs/cloud-pak/cloud-pak-2-2x.jpg"
         alt="User flow diagram showing the old dashboard experience"
         aria-labelledby="cloud-pak-2-caption"
       />
@@ -50,7 +50,7 @@
     </div>
     <div class="project-feature-img container">
       <img
-        src="~/assets/imgs/cloud-pak/cloud-pak-3-2x.png"
+        src="~/assets/imgs/cloud-pak/cloud-pak-3-2x.jpg"
         alt="Divided image showing process screenshots of a user flow diagram and a mid-fidelity prototype"
         aria-labelledby="cloud-pak-3-caption"
       />
@@ -92,7 +92,7 @@
     </div>
     <div class="project-feature-img container">
       <img
-        src="~/assets/imgs/cloud-pak/cloud-pak-5-2x.png"
+        src="~/assets/imgs/cloud-pak/cloud-pak-5-2x.jpg"
         alt="Invision prototype for selecting widgets to add to a dashboard"
         aria-labelledby="cloud-pak-5-caption"
       />
@@ -112,7 +112,7 @@
     </div>
     <div class="project-feature-img container">
       <img
-        src="~/assets/imgs/cloud-pak/cloud-pak-6-2x.png"
+        src="~/assets/imgs/cloud-pak/cloud-pak-6-2x.jpg"
         alt="Screenshot showing a dropdown for a user to change dashboards"
       />
     </div>
@@ -120,14 +120,14 @@
       <div class="project-feature-img column">
         <img
           class="project-feature-img"
-          src="~/assets/imgs/cloud-pak/cloud-pak-7-2x.png"
+          src="~/assets/imgs/cloud-pak/cloud-pak-7-2x.jpg"
           alt="Zoomed in screenshot of dashboard action bar with available updates"
         />
       </div>
       <div class="project-feature-img column">
         <img
           class="project-feature-img"
-          src="~/assets/imgs/cloud-pak/cloud-pak-8-2x.png"
+          src="~/assets/imgs/cloud-pak/cloud-pak-8-2x.jpg"
           alt="Documentation showing feedback and proposed updates to widget card components"
           aria-labelledby="cloud-pak-8-caption"
         />
