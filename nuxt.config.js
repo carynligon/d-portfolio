@@ -49,7 +49,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['nuxt-lazy-load'],
+  modules: [],
   /*
    ** Build configuration
    */
