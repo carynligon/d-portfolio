@@ -6,7 +6,7 @@
     </div>
     <div class="project-feature-img column">
       <img
-        src="~/assets/imgs/accessibility/accessibility-1-2x.png"
+        src="~/assets/imgs/accessibility/accessibility-1-2x.jpg"
         alt="Cloud Pak for Security homepage with application links and dashboard"
         aria-labelledby="accessibility-1-caption"
       />
@@ -26,7 +26,7 @@
     </div>
     <div class="project-feature-img column">
       <img
-        src="~/assets/imgs/accessibility/accessibility-2-2x.png"
+        src="~/assets/imgs/accessibility/accessibility-2-2x.jpg"
         alt="Spread from accessibility handboook that says Inclusive Design is Good Business."
         aria-labelledby="accessibility-2-caption"
       />
@@ -42,7 +42,7 @@
     </div>
     <div class="project-feature-img column">
       <img
-        src="~/assets/imgs/accessibility/accessibility-3-2x.png"
+        src="~/assets/imgs/accessibility/accessibility-3-2x.jpg"
         alt="Two screenshots showing accessibility coding tips and details about color accessibility"
         aria-labelledby="accessibility-3-caption"
       />
@@ -63,20 +63,20 @@
       aria-labelledby="accessibility-4-caption"
     >
       <img
-        src="~/assets/imgs/accessibility/accessibility-4-2x.png"
+        src="~/assets/imgs/accessibility/accessibility-4-2x.jpg"
         alt="The cover of the IBM Accessibility Handbook with accessibility related illustrations."
       />
     </div>
     <div class="img-container container column">
       <div class="project-feature-img column">
         <img
-          src="~/assets/imgs/accessibility/accessibility-5-2x.png"
+          src="~/assets/imgs/accessibility/accessibility-5-2x.jpg"
           alt="First page of the handbook with the title of One size does not fit all."
         />
       </div>
       <div class="project-feature-img column">
         <img
-          src="~/assets/imgs/accessibility/accessibility-6-2x.png"
+          src="~/assets/imgs/accessibility/accessibility-6-2x.jpg"
           alt="The online landing page for the offering managemeent section of the handbook."
         />
       </div>
