@@ -3,8 +3,8 @@
     <div>
       <Nav />
       <h1 class="title column">
-        I’m Derrick Ligon, a product designer in Austin, TX currently working at
-        IBM. My background includes brand, visual design, user experience
+        I’m Derrick Ligon, an interaction designer in Austin, TX currently working at
+        Google. My background includes brand, visual design, user experience
         design, and design systems. Outside of solving user needs, my focus is
         on working to be a better ally.
       </h1>
@@ -12,7 +12,7 @@
         <div class="current-role column">
           <h3>Currently</h3>
           <div class="role-content">
-            <p class="current-role-text">UX Designer @ IBM, since 2018</p>
+            <p class="current-role-text">Interaction Designer @ Google, since 2021</p>
             <div class="email">
               <p>hello@derrickligon.com</p>
               <textarea
@@ -42,14 +42,14 @@ hello@derrickligon.com</textarea
         <div class="previous-roles column">
           <h3>Previously</h3>
           <ul class="role-content">
+           <li>
+              <p>UX Designer @ IBM, 2018–2021</p>
+            </li>
             <li>
               <p>Designer @ Phobio, 2017–2018</p>
             </li>
             <li>
               <p>Visual/UX Designer @ IBM, 2015–2017</p>
-            </li>
-            <li>
-              <p>Designer @ Fracture, 2013–2015</p>
             </li>
           </ul>
         </div>
