@@ -1,21 +1,20 @@
 <template>
   <div>
-    <p v-bind:class="{ quote: !copy.noQuotes, h2: true }">{{ copy.quote }}</p>
+    <p :class="{ quote: !copy.noQuotes, h2: true }">{{ copy.quote }}</p>
     <p class="author h3">{{ copy.author }}</p>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'QuoteSection',
-  props: {
-    copy: {
-      quote: { type: String },
-      author: { type: String },
-      noQuotes: { type: Boolean }
-    }
+<script setup lang="ts">
+interface Props {
+  copy: {
+    quote?: string
+    author?: string
+    noQuotes?: boolean
   }
 }
+
+defineProps<Props>()
 </script>
 
 <style scoped>

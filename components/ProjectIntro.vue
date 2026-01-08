@@ -4,7 +4,7 @@
       <h1>{{ copy.title }}</h1>
     </div>
     <div class="project-info container">
-      <div v-bind:class="{ wider: wider, description: true, column: true }">
+      <div :class="{ wider: wider, description: true, column: true }">
         <h2>{{ copy.subtitle }}</h2>
         <p v-html="copy.description" />
       </div>
@@ -29,20 +29,26 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ProjectIntro',
-  props: {
-    copy: {
-      title: { type: String },
-      subtitle: { type: String },
-      description: { type: String },
-      role: { type: String },
-      teammates: { type: Array, default: [] }
-    },
-    wider: { type: Boolean }
-  }
+<script setup lang="ts">
+interface Teammate {
+  name: string
+  link: string
+  role: string
 }
+
+interface Props {
+  copy: {
+    title?: string
+    subtitle?: string
+    description?: string
+    role?: string
+    timeline?: string
+    teammates?: Teammate[]
+  }
+  wider?: boolean
+}
+
+defineProps<Props>()
 </script>
 
 <style scoped>

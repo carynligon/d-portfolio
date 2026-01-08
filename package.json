@@ -1,44 +1,38 @@
 {
   "name": "d-portfolio",
   "version": "1.0.0",
-  "description": "I’m Derrick Ligon, a product designer in Austin, TX currently working at IBM. My background includes brand, visual design, user experience design, and design systems. Outside of solving user needs, my focus is on working to be a better ally.",
+  "description": "I'm Derrick Ligon, a product designer in Alanta, GA currently working at IBM. My background includes brand, visual design, user experience design, and design systems. Outside of solving user needs, my focus is on working to be a better ally.",
   "author": "Caryn Ligon",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt dev",
     "build": "nuxt build",
-    "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "test": "jest"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "test": "vitest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "vue-carousel": "^0.18.0"
+    "nuxt": "^3.14.159",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.6.0",
-    "@nuxtjs/eslint-config-typescript": "^1.0.0",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/stylelint-module": "^3.1.0",
-    "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.1.0",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.2.5",
-    "jest": "^24.1.0",
-    "prettier": "1.19.1",
-    "pretty-quick": "^3.0.0",
-    "stylelint": "^10.1.0",
-    "ts-jest": "^25.0.0",
-    "vue-jest": "^4.0.0-0"
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/test-utils": "^3.14.4",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "pretty-quick": "^4.0.0",
+    "sass": "^1.83.0",
+    "stylelint": "^16.12.0",
+    "typescript": "^5.7.2",
+    "vitest": "^3.2.0",
+    "vue-tsc": "^2.1.10"
   }
 }

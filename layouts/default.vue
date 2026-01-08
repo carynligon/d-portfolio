@@ -1,13 +1,52 @@
 <template>
   <div>
-    <nuxt />
+    <NuxtPage />
   </div>
 </template>
 
 <style>
-body {
-  /* Fonts */
+@font-face {
   font-family: 'Graphik Web';
+  src: url('/fonts/Graphik-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('/fonts/Graphik-400-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('/fonts/Graphik-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('/fonts/Graphik-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  /* Colors */
+  --black: #161616;
+  --dark-gray: #757575;
+  --gray: #dcdcdc;
+  --links: #0336ff;
+
+  /* Fonts */
+  font-family:
+    'Graphik Web',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   --font-size-h1: 2.625rem;
   --font-size-h2: 2.125rem;
   --font-size-h3: 1.5rem;
@@ -30,6 +69,40 @@ body {
   --screen-md: 768px;
   --screen-lg: 992px;
   --screen-xl: 1200px;
+
+  /* Grid */
+  padding: 0 80px;
+}
+
+body a {
+  color: var(--links);
+  text-decoration: none;
+}
+
+#__nuxt {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 -12px;
+}
+
+.column {
+  --columns: 12; /* Number of columns in the grid system */
+  --width: 0; /* Default width of the element */
+
+  width: calc(var(--width) / var(--columns) * 100%);
+  padding: 0;
+}
+
+.container .column:first-child {
+  padding-left: 0;
+}
+.container .column:last-child {
+  padding-right: 0;
 }
 
 *,
@@ -122,7 +195,7 @@ a:hover {
   font-size: var(--font-size-body-sm);
   margin-bottom: var(--spacer-xs);
   margin-top: var(--spacer-sm);
-  --width: 9;
+  width: 100%;
 }
 video {
   display: block;
@@ -153,9 +226,6 @@ video {
     font-size: var(--font-size-h4);
     font-weight: 400;
     line-height: var(--font-size-h3);
-  }
-  .caption {
-    display: none;
   }
   .button-container {
     display: flex;

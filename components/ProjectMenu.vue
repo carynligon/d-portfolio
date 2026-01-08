@@ -14,7 +14,7 @@
         alt="A user flow diagram for creating dashboards"
       />
     </a>
-    <a class="project column" href="/experience-guide">
+    <a class="project" href="/experience-guide">
       <div>
         <p>IBM Security Experience Guide</p>
       </div>
@@ -23,7 +23,7 @@
         alt="Screenshot of the IBM Security Experience Guide"
       />
     </a>
-    <a class="project column" href="/accessibility">
+    <a class="project" href="/accessibility">
       <div>
         <p>IBM Accessibility Handbook</p>
       </div>
@@ -32,7 +32,7 @@
         alt="Landing page for the Design section of the IBM Accessibility Handbook"
       />
     </a>
-    <a class="project column" href="/other">
+    <a class="project" href="/other">
       <div>
         <p>Other Work</p>
       </div>
@@ -41,7 +41,7 @@
         alt="iPad showing a a device trade-in experience for Sprint"
       />
     </a>
-    <a class="project column" href="/illustration">
+    <a class="project" href="/illustration">
       <div>
         <p>Illustration</p>
       </div>

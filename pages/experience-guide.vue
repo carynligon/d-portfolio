@@ -2,7 +2,7 @@
   <div>
     <div>
       <Nav />
-      <ProjectIntro v-bind:copy="copy.intro" />
+      <ProjectIntro :copy="copy.intro" />
     </div>
     <div class="project-feature-img video column">
       <video
@@ -29,11 +29,11 @@
     </div>
     <div class="content container">
       <div class="content-sub column">
-        <QuoteSection v-bind:copy="copy.systemsThinkingQuote" />
+        <QuoteSection :copy="copy.systemsThinkingQuote" />
       </div>
       <div class="spacer column"></div>
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.problem" />
+        <ContentSection :copy="copy.problem" />
       </div>
     </div>
     <div class="project-feature-img container">
@@ -49,7 +49,7 @@
     </div>
     <div class="content container">
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.process" />
+        <ContentSection :copy="copy.process" />
       </div>
     </div>
     <div class="project-feature-img video column">
@@ -79,10 +79,10 @@
       <div class="content-sub placeholder column" />
       <div class="spacer column" />
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.buildingHome" />
+        <ContentSection :copy="copy.buildingHome" />
       </div>
     </div>
-    <div class="project-feature-img column">
+    <div class="project-feature-img">
       <img
         src="~/assets/imgs/experience-guide/experience-guide-4-2x.jpg"
         alt="Screenshot of photography resources within the marketing assets page of our experience guide."
@@ -96,10 +96,10 @@
     </div>
     <div class="content container">
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.newSkills" />
+        <ContentSection :copy="copy.newSkills" />
       </div>
     </div>
-    <div class="project-feature-img video centered column">
+    <div class="project-feature-img video centered">
       <img
         src="~/assets/videos/experience-guide-5.gif"
         alt="Video showing a cursor hovering over a UI card within a catalog of research artifacts."
@@ -129,11 +129,11 @@
     </div>
     <div class="content container">
       <div class="content-sub column">
-        <QuoteSection v-bind:copy="copy.philQuote" />
+        <QuoteSection :copy="copy.philQuote" />
       </div>
       <div class="spacer column"></div>
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.outcomes" />
+        <ContentSection :copy="copy.outcomes" />
       </div>
     </div>
     <BottomNav active="experienceGuide" />
@@ -141,8 +141,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script setup lang="ts">
 import copy from '~/copy/experience-guide'
 import Nav from '~/components/Nav.vue'
 import BottomNav from '~/components/BottomNav.vue'
@@ -150,22 +149,6 @@ import ProjectIntro from '~/components/ProjectIntro.vue'
 import ContentSection from '~/components/ContentSection.vue'
 import QuoteSection from '~/components/QuoteSection.vue'
 import Footer from '~/components/Footer.vue'
-
-export default Vue.extend({
-  components: {
-    BottomNav,
-    Nav,
-    ProjectIntro,
-    ContentSection,
-    Footer,
-    QuoteSection
-  },
-  data() {
-    return {
-      copy
-    }
-  }
-})
 </script>
 
 <style>
@@ -183,7 +166,9 @@ export default Vue.extend({
 }
 .project-feature-img.video video,
 .project-feature-img.video img {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .project-feature-img.half {
   margin-top: var(--spacer-3xl);

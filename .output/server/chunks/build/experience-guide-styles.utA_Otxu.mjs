@@ -1,0 +1,8 @@
+const experienceGuide_vue_vue_type_style_index_0_lang = ".project-feature-img{margin-top:var(--spacer-3xl);--width:12}.project-feature-img.video{background-color:var(--gray);overflow:hidden;padding:5% 5% 0}.project-feature-img.video.centered{padding:5%}.project-feature-img.video img,.project-feature-img.video video{box-shadow:0 14px 28px #00000040,0 10px 10px #00000038}.project-feature-img.half{margin-top:var(--spacer-3xl);--width:6}.project-feature-img img{display:block;height:100%;width:100%}.img-container{padding:0;--width:12}.img-container .project-feature-img{margin:0;--width:6}.content{margin-top:var(--spacer-2xl)}@media(max-width:576px){.project-feature-img{margin-top:var(--spacer-md)}}";
+
+const experienceGuideStyles_utA_Otxu = [
+  experienceGuide_vue_vue_type_style_index_0_lang
+];
+
+export { experienceGuideStyles_utA_Otxu as default };
+//# sourceMappingURL=experience-guide-styles.utA_Otxu.mjs.map

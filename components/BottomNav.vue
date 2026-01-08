@@ -8,7 +8,7 @@
         <span>/</span>
       </li>
       <li>
-        <a href="/cloud-pak" v-bind:class="{ active: active === 'cloudPak' }"
+        <a href="/cloud-pak" :class="{ active: active === 'cloudPak' }"
           >Cloud Pak for Security</a
         >
       </li>
@@ -18,7 +18,7 @@
       <li>
         <a
           href="/experience-guide"
-          v-bind:class="{ active: active === 'experienceGuide' }"
+          :class="{ active: active === 'experienceGuide' }"
           >Experience Guide</a
         >
       </li>
@@ -28,7 +28,7 @@
       <li>
         <a
           href="/accessibility"
-          v-bind:class="{ active: active === 'accessibility' }"
+          :class="{ active: active === 'accessibility' }"
           >IBM Accessibility Handbook</a
         >
       </li>
@@ -36,7 +36,7 @@
         <span>/</span>
       </li>
       <li>
-        <a href="/other" v-bind:class="{ active: active === 'other' }"
+        <a href="/other" :class="{ active: active === 'other' }"
           >Other Work</a
         >
       </li>
@@ -46,7 +46,7 @@
       <li>
         <a
           href="/illustration"
-          v-bind:class="{ active: active === 'illustration' }"
+          :class="{ active: active === 'illustration' }"
           >Illustration</a
         >
       </li>
@@ -54,13 +54,12 @@
   </nav>
 </template>
 
-<script>
-export default {
-  name: 'BottomNav',
-  props: {
-    active: { type: String }
-  }
+<script setup lang="ts">
+interface Props {
+  active?: string
 }
+
+defineProps<Props>()
 </script>
 
 <style>

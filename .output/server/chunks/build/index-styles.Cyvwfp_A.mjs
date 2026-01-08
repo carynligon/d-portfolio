@@ -1,0 +1,8 @@
+const index_vue_vue_type_style_index_0_lang = 'body{font-family:Graphik Web}.title{font-weight:400;line-height:3.625rem;margin:5.625rem 0 3.0625rem;--width:12}.roles p{font-size:var(--font-size-body-lg)}h3{font-size:var(--font-size-h3);font-weight:400;margin-bottom:var(--spacer-xs)}.spacer{--width:1}.current-role,.previous-roles{--width:6}.role-content{display:flex;flex-direction:column;justify-content:space-between}.current-role-text{margin-bottom:var(--spacer-lg)}.previous-roles ul{padding:0}.email{align-items:center;display:flex}.roles .email p{margin:0}.email .email-svg-wrapper{align-items:center;border-radius:4px;display:flex;height:2.25rem;justify-content:center;margin-left:6px;position:relative;width:2.25rem}.copy-text{background-color:var(--black);border-radius:4px;color:#fff;content:"Copy email";display:block;font-size:.75rem;opacity:0;padding:.375rem .5rem;position:absolute;top:1.75rem;transition:all .15s cubic-bezier(.4,0,.2,1);white-space:nowrap}.email-svg-wrapper.hover .copy-text,.email-svg-wrapper:hover .copy-text{opacity:1;top:2.5rem;transition:all .15s cubic-bezier(.4,0,.2,1)}.email img{height:1.25rem;width:1.25rem}.email .email-svg-wrapper:hover{background-color:#0000000a;cursor:pointer}@media(max-width:992px){.current-role,.previous-roles{--width:12}.roles p{margin-bottom:var(--spacer-xs)}.previous-roles{margin-top:var(--spacer-lg)}}@media(max-width:576px){.title{line-height:var(--font-size-h1);margin-top:var(--spacer-3xl)}}';
+
+const indexStyles_Cyvwfp_A = [
+  index_vue_vue_type_style_index_0_lang
+];
+
+export { indexStyles_Cyvwfp_A as default };
+//# sourceMappingURL=index-styles.Cyvwfp_A.mjs.map

@@ -2,14 +2,14 @@
   <div>
     <div>
       <Nav />
-      <ProjectIntro v-bind:wider="true" v-bind:copy="copy.intro" />
+      <ProjectIntro :wider="true" :copy="copy.intro" />
     </div>
     <div class="illustration-grid">
       <img
         v-for="(illustration, index) in copy.illustrations"
         :key="'illustration-' + index"
         :alt="illustration.alt"
-        v-bind:src="getImgUrl(illustration.src)"
+        :src="getImgUrl(illustration.src)"
       />
     </div>
     <BottomNav active="illustration" />
@@ -17,32 +17,15 @@
   </div>
 </template>
 
-<script>
-import Vue from 'vue'
+<script setup lang="ts">
 import copy from '~/copy/illustration'
 import Nav from '~/components/Nav.vue'
 import BottomNav from '~/components/BottomNav.vue'
 import ProjectIntro from '~/components/ProjectIntro.vue'
 import Footer from '~/components/Footer.vue'
 
-export default {
-  name: 'Illustration',
-  components: {
-    BottomNav,
-    Nav,
-    ProjectIntro,
-    Footer
-  },
-  data() {
-    return {
-      copy
-    }
-  },
-  methods: {
-    getImgUrl(path) {
-      return require(`../assets/imgs/${path}`)
-    }
-  }
+const getImgUrl = (path: string) => {
+  return `/imgs/${path}`
 }
 </script>
 

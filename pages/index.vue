@@ -2,33 +2,34 @@
   <div class="container">
     <div>
       <Nav />
-      <h1 class="title column">
-        I’m Derrick Ligon, an interaction designer in Austin, TX currently working at
-        Google. My background includes brand, visual design, user experience
-        design, and design systems. Outside of solving user needs, my focus is
-        on working to be a better ally.
+      <h1 class="title">
+        I’m Derrick Ligon, an interaction designer in Atlanta, GA currently
+        working at Google. My background includes branding, visual design, user
+        experience design, and design systems.
       </h1>
       <div class="roles container">
-        <div class="current-role column">
+        <div class="current-role">
           <h3>Currently</h3>
           <div class="role-content">
-            <p class="current-role-text">Interaction Designer @ Google, since 2021</p>
+            <p class="current-role-text">
+              Interaction Designer @ Google, since 2021
+            </p>
             <div class="email">
               <p>hello@derrickligon.com</p>
               <textarea
                 id="email-copy"
                 disabled="true"
                 value="hello@derrickligon.com"
-                style="opacity: 0; position: absolute;"
+                style="opacity: 0; position: absolute"
               >
 hello@derrickligon.com</textarea
               >
               <div
-                v-bind:class="{
-                  ['email-svg-wrapper']: true,
-                  hover: hover
+                :class="{
+                  'email-svg-wrapper': true,
+                  hover: hover,
                 }"
-                v-on:click="copyEmail"
+                @click="copyEmail"
               >
                 <img
                   alt="click to copy email address"
@@ -39,10 +40,10 @@ hello@derrickligon.com</textarea
             </div>
           </div>
         </div>
-        <div class="previous-roles column">
+        <div class="previous-roles">
           <h3>Previously</h3>
           <ul class="role-content">
-           <li>
+            <li>
               <p>UX Designer @ IBM, 2018–2021</p>
             </li>
             <li>
@@ -60,50 +61,38 @@ hello@derrickligon.com</textarea
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script setup lang="ts">
+import { ref } from 'vue'
 import Nav from '~/components/Nav.vue'
 import ProjectMenu from '~/components/ProjectMenu.vue'
 import Footer from '~/components/Footer.vue'
 
-export default Vue.extend({
-  components: {
-    Nav,
-    ProjectMenu,
-    Footer
-  },
-  methods: {
-    setHoverState() {
-      this.copyText = 'Copied!'
-      this.hover = true
-      const hoverTimeout = setTimeout(() => {
-        this.hover = false
-        clearTimeout(hoverTimeout)
-      }, 1300)
-      const textTimeout = setTimeout(() => {
-        this.copyText = 'Copy email'
-        clearTimeout(textTimeout)
-      }, 1500)
-    },
-    copyEmail() {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText('hello@derrickligon.com')
-        return this.setHoverState()
-      }
-      const inputEl = document.getElementById('email-copy') || {}
-      // @ts-ignore
-      inputEl.select()
-      document.execCommand('copy')
-      return this.setHoverState()
-    }
-  },
-  data() {
-    return {
-      copyText: 'Copy email',
-      hover: false
-    }
+const copyText = ref('Copy email')
+const hover = ref(false)
+
+const setHoverState = () => {
+  copyText.value = 'Copied!'
+  hover.value = true
+  const hoverTimeout = setTimeout(() => {
+    hover.value = false
+    clearTimeout(hoverTimeout)
+  }, 1300)
+  const textTimeout = setTimeout(() => {
+    copyText.value = 'Copy email'
+    clearTimeout(textTimeout)
+  }, 1500)
+}
+
+const copyEmail = () => {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText('hello@derrickligon.com')
+    return setHoverState()
   }
-})
+  const inputEl = document.getElementById('email-copy') as HTMLTextAreaElement
+  inputEl?.select()
+  document.execCommand('copy')
+  return setHoverState()
+}
 </script>
 
 <style>
@@ -130,6 +119,7 @@ h3 {
 .current-role,
 .previous-roles {
   --width: 6;
+  width: 50%;
 }
 .role-content {
   display: flex;
@@ -192,6 +182,7 @@ h3 {
   .current-role,
   .previous-roles {
     --width: 12;
+    width: 100%;
   }
   .roles p {
     margin-bottom: var(--spacer-xs);

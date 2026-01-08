@@ -11,22 +11,20 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ContentSection',
-  props: {
-    copy: {
-      title: { type: String },
-      subtitle: { type: String },
-      paragraphs: { type: Array, default: [] }
-    }
-  },
-  computed: {
-    paragraphs() {
-      return this.copy.paragraphs
-    }
+<script setup lang="ts">
+import { computed } from 'vue'
+
+interface Props {
+  copy: {
+    title?: string
+    subtitle?: string
+    paragraphs?: string[]
   }
 }
+
+const props = defineProps<Props>()
+
+const paragraphs = computed(() => props.copy.paragraphs)
 </script>
 
 <style>

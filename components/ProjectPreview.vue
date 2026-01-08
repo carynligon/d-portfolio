@@ -16,15 +16,28 @@
           <source src="~/assets/videos/other-1.mp4" type="video/mp4" />
         </video>
       </div>
-      <Carousel v-if="copy.images.length > 1" :perPage="1">
-        <Slide
-          class="carousel-slide"
-          v-for="(image, index) in copy.images"
-          :key="'project-image-' + index"
-        >
-          <img :src="getImgUrl(image.src)" :alt="image.altText" />
-        </Slide>
-      </Carousel>
+      <div v-if="copy.images.length > 1" class="custom-carousel">
+        <div class="carousel-slide">
+          <img
+            v-for="(image, index) in copy.images"
+            v-show="index === currentSlide"
+            :key="'project-image-' + index"
+            :src="getImgUrl(image.src)"
+            :alt="image.altText"
+          />
+        </div>
+        <div class="carousel-controls">
+          <div class="carousel-pagination">
+            <span
+              v-for="(image, index) in copy.images"
+              :key="'dot-' + index"
+              @click="goToSlide(index)"
+              :class="{ active: index === currentSlide }"
+              class="pagination-dot"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="content left column">
       <p class="date">
@@ -40,7 +53,7 @@
         v-for="(paragraph, index) in copy.paragraphs"
         :key="'project-p-' + index"
       >
-        <p v-bind:class="{ quote: paragraph.withQuote }" v-if="paragraph.text">
+        <p :class="{ quote: paragraph.withQuote }" v-if="paragraph.text">
           {{ paragraph.text }}
         </p>
         <ul v-if="paragraph.list">
@@ -70,31 +83,65 @@
   </div>
 </template>
 
-<script>
-import { Carousel, Slide } from 'vue-carousel'
+<script setup lang="ts">
+import { ref } from 'vue'
 
-export default {
-  name: 'ProjectPreview',
-  components: {
-    Carousel,
-    Slide
-  },
-  props: {
-    copy: {
-      company: { type: String },
-      date: { type: String },
-      title: { type: String },
-      tags: { type: Array },
-      paragraphs: { type: Array },
-      link: { type: String },
-      images: { type: Array }
-    }
-  },
-  methods: {
-    getImgUrl(path) {
-      return require(`../assets/imgs/${path}`)
-    }
+interface Image {
+  src: string
+  altText: string
+}
+
+interface Paragraph {
+  text?: string
+  withQuote?: boolean
+  list?: string[]
+}
+
+interface Teammate {
+  name: string
+  link: string
+}
+
+interface Contact {
+  text: string
+  teammates: Teammate[]
+}
+
+interface Props {
+  copy: {
+    company?: string
+    date?: string
+    title?: string
+    tags?: string[]
+    paragraphs?: Paragraph[]
+    link?: string
+    images: Image[]
+    contact?: Contact
   }
+}
+
+const props = defineProps<Props>()
+
+const currentSlide = ref(0)
+
+const getImgUrl = (path: string) => {
+  return `/imgs/${path}`
+}
+
+const nextSlide = () => {
+  if (currentSlide.value < props.copy.images.length - 1) {
+    currentSlide.value++
+  }
+}
+
+const prevSlide = () => {
+  if (currentSlide.value > 0) {
+    currentSlide.value--
+  }
+}
+
+const goToSlide = (index: number) => {
+  currentSlide.value = index
 }
 </script>
 
@@ -142,7 +189,9 @@ p {
   width: 100%;
 }
 .preview-video video {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .visit-link {
   background-color: var(--black);
@@ -159,15 +208,44 @@ ul {
 li {
   font-size: var(--font-size-body-sm);
 }
+.custom-carousel {
+  position: relative;
+  width: 100%;
+}
 .carousel-slide {
   width: 100%;
+  position: relative;
 }
 .carousel-slide img {
   height: 100%;
   width: 100%;
+  display: block;
 }
-.VueCarousel-pagination {
-  margin-top: calc(var(--spacer-md * -1));
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.carousel-pagination {
+  display: flex;
+  gap: 0.5rem;
+}
+.pagination-dot {
+  margin: 0 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.pagination-dot.active {
+  background: var(--black);
+}
+.pagination-dot:hover {
+  opacity: 0.8;
 }
 @media (max-width: 768px) {
   .container {

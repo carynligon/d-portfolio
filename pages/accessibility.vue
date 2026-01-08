@@ -2,9 +2,9 @@
   <div>
     <div>
       <Nav />
-      <ProjectIntro v-bind:copy="copy.intro" />
+      <ProjectIntro :copy="copy.intro" />
     </div>
-    <div class="project-feature-img column">
+    <div class="project-feature-img">
       <img
         src="~/assets/imgs/accessibility/accessibility-1-2x.jpg"
         alt="Cloud Pak for Security homepage with application links and dashboard"
@@ -17,14 +17,14 @@
     </div>
     <div class="content container">
       <div class="content-sub column">
-        <QuoteSection v-bind:copy="copy.stats" />
+        <QuoteSection :copy="copy.stats" />
       </div>
       <div class="spacer column"></div>
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.problem" />
+        <ContentSection :copy="copy.problem" />
       </div>
     </div>
-    <div class="project-feature-img column">
+    <div class="project-feature-img">
       <img
         src="~/assets/imgs/accessibility/accessibility-2-2x.jpg"
         alt="Spread from accessibility handboook that says Inclusive Design is Good Business."
@@ -37,10 +37,10 @@
     </div>
     <div class="content container">
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.process" />
+        <ContentSection :copy="copy.process" />
       </div>
     </div>
-    <div class="project-feature-img column">
+    <div class="project-feature-img">
       <img
         src="~/assets/imgs/accessibility/accessibility-3-2x.jpg"
         alt="Two screenshots showing accessibility coding tips and details about color accessibility"
@@ -55,19 +55,16 @@
       <div class="content-sub placeholder column" />
       <div class="spacer column" />
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.designForEveryone" />
+        <ContentSection :copy="copy.designForEveryone" />
       </div>
     </div>
-    <div
-      class="project-feature-img column"
-      aria-labelledby="accessibility-4-caption"
-    >
+    <div class="project-feature-img" aria-labelledby="accessibility-4-caption">
       <img
         src="~/assets/imgs/accessibility/accessibility-4-2x.jpg"
         alt="The cover of the IBM Accessibility Handbook with accessibility related illustrations."
       />
     </div>
-    <div class="img-container container column">
+    <div class="img-container container">
       <div class="project-feature-img column">
         <img
           src="~/assets/imgs/accessibility/accessibility-5-2x.jpg"
@@ -89,7 +86,7 @@
       <div class="content-sub placeholder column"></div>
       <div class="spacer column"></div>
       <div class="content-main column">
-        <ContentSection v-bind:copy="copy.outcomes" />
+        <ContentSection :copy="copy.outcomes" />
       </div>
     </div>
     <BottomNav active="accessibility" />
@@ -97,8 +94,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script setup lang="ts">
 import copy from '~/copy/accessibility'
 import Nav from '~/components/Nav.vue'
 import BottomNav from '~/components/BottomNav.vue'
@@ -106,22 +102,6 @@ import ProjectIntro from '~/components/ProjectIntro.vue'
 import ContentSection from '~/components/ContentSection.vue'
 import QuoteSection from '~/components/QuoteSection.vue'
 import Footer from '~/components/Footer.vue'
-
-export default Vue.extend({
-  components: {
-    BottomNav,
-    Nav,
-    ProjectIntro,
-    ContentSection,
-    Footer,
-    QuoteSection
-  },
-  data() {
-    return {
-      copy
-    }
-  }
-})
 </script>
 
 <style>
