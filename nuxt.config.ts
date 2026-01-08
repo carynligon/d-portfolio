@@ -4,6 +4,10 @@ export default defineNuxtConfig({
 
   ssr: false,
 
+  nitro: {
+    preset: 'static'
+  },
+
   app: {
     head: {
       title: 'Derrick Ligon',
